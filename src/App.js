@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -17,10 +18,15 @@ import Ras from "./pages/chapters/RAS/Ras";
 import Competitions from "./pages/events/competitions/Competitions";
 import Webinars from "./pages/events/webinars/Webinars";
 import Quizzes from "./pages/events/quizzes/Quizzes";
+=======
+import logo from './logo.svg';
+import './App.css';
+>>>>>>> 52980f6... Initialize project using Create React App
 
 function App() {
   return (
     <div className="App">
+<<<<<<< HEAD
       <Router>
         <div>
           <NavBar />
@@ -63,6 +69,22 @@ function App() {
       </div>
     </Router>
     <Footer />
+=======
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+>>>>>>> 52980f6... Initialize project using Create React App
     </div>
   );
 }
