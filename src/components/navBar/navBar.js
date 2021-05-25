@@ -1,7 +1,7 @@
 import { Paper } from "@material-ui/core";
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../images/ieee.svg";
+import logo from "../../images/ieee-min.png";
 import "./style.css";
 
 const NavBar = () => {
