@@ -1,5 +1,8 @@
 import webinar1 from '../images/webinars/webinar.jpg';
 import webinar2 from '../images/webinars/Poster1.png';
+import webinar3 from '../images/webinars/Poster1.png';
+import webinar4 from '../images/webinars/Poster1.png';
+import webinar5 from '../images/webinars/Poster1.png';
 export const webinars = [
     {
         title: 'webinar title',
@@ -23,7 +26,7 @@ export const webinars = [
         speakerDetails: 'details of the speaker',
         eventDescription: 'Where we can get to know in detail about digital marketing and a lot more by the phenomenal entrepreneur',
         date: '12 July 2020',
-        image: webinar1,
+        image: webinar3,
     },
     {
         title: 'webinar title',
@@ -31,7 +34,7 @@ export const webinars = [
         speakerDetails: 'details of the speaker',
         eventDescription: 'Where we can get to know in detail about digital marketing and a lot more by the phenomenal entrepreneur',
         date: '12 July 2020',
-        image: webinar1,
+        image: webinar4,
     },
     {
         title: 'webinar title',
@@ -39,7 +42,7 @@ export const webinars = [
         speakerDetails: 'details of the speaker',
         eventDescription: 'Where we can get to know in detail about digital marketing and a lot more by the phenomenal entrepreneur',
         date: '12 July 2020',
-        image: webinar1,
+        image: webinar5,
     },
     {
         title: 'webinar title',

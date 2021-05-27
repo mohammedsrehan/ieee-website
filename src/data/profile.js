@@ -38,6 +38,9 @@ export const excom = [
 
 export const programCommittee = [
     {
-
+        name: 'name',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        image: '../images/profiles/person.jpg'
     },
 ]
