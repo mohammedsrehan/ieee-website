@@ -5,11 +5,11 @@ import webinar4 from '../images/webinars/Poster1.png';
 import webinar5 from '../images/webinars/Poster1.png';
 export const webinars = [
     {
-        title: 'webinar title',
-        speakerName: 'name',
-        speakerDetails: 'details of the speaker',
-        eventDescription: 'Where we can get to know in detail about digital marketing and a lot more by the phenomenal entrepreneur',
-        date: '12 July 2020',
+        title: 'Digital Marketing as Career',
+        speakerName: 'Mr. Nikeelu Gunda',
+        speakerDetails: 'Entrepreneur, Founder of Digital Connect.',
+        eventDescription: 'Where we can get to know in detail about digital marketing and a lot more by the phenomenal entrepreneur.',
+        date: '04 June 2020',
         image: webinar2,
     },
     {
