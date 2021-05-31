@@ -18,13 +18,20 @@ function Home() {
         disableGutters={true}
       >
         <section className={classes.header}>
-          <Typography variant="h5">IEEE STUDENT BRANCH</Typography>
-          <Typography variant="body1">
-            Nawab Shah Alam Khan College of Engineering and Technology
-          </Typography>
-          <Button variant="contained" color="primary">
-            Primary
-          </Button>
+          <div className={classes.header__text}>
+            <Typography variant="h4">IEEE STUDENT BRANCH</Typography>
+            <Typography variant="body1">
+              Nawab Shah Alam Khan College of Engineering and Technology
+            </Typography>
+          </div>
+          <Button
+          variant="contained"
+          color="primary"
+          size="large"
+          className={classes.button}
+        >
+          Join Us
+        </Button>
         </section>
       </Container>
       <section className={classes.mainSection}>
@@ -107,7 +114,7 @@ function Home() {
           </Paper>
         </section>
         <section className={classes.ourChapters}>
-          <Typography variant="h4">OUR CHAPTERS</Typography>
+          <Typography variant="h3">OUR CHAPTERS</Typography>
           <div className={classes.chapter_cards}>
             <Paper elevation={12} className={classes.chapters}>
               <img
@@ -135,41 +142,50 @@ function Home() {
       </section>
       <Container
         maxWidth={false}
-        className={classes.container}
+        className={classes.bottomContainer}
         disableGutters={true}
       >
         <div className={classes.cards}>
           <Paper elevation={12} className={classes.card}>
-            <Typography variant="h4" className={classes.red}>
+            <Typography variant="h3" className={classes.red}>
               40+
             </Typography>
             <Typography variant="body1">Student Members</Typography>
           </Paper>
           <Paper elevation={12} className={classes.card}>
-            <Typography variant="h4" className={classes.red}>
+            <Typography variant="h3" className={classes.red}>
               20+
             </Typography>
             <Typography variant="body1">Events</Typography>
           </Paper>
           <Paper elevation={12} className={classes.card}>
-            <Typography variant="h4" className={classes.red}>
+            <Typography variant="h3" className={classes.red}>
               5
             </Typography>
             <Typography variant="body1">Professional Members</Typography>
           </Paper>
           <Paper elevation={12} className={classes.card}>
-            <Typography variant="h4" className={classes.red}>
+            <Typography variant="h3" className={classes.red}>
               3
             </Typography>
             <Typography variant="body1">Chapters</Typography>
           </Paper>
         </div>
-        <Typography variant="h3">Ready to get started?</Typography>
-        <Typography variant="body1">
+        <Typography variant="h2" className={classes.text}>
+          Ready to get started?
+        </Typography>
+        <Typography variant="h6" className={classes.text}>
           Become an IEEE Member to join the first student community of Nawab
           Shah Alam Khan college of Engineering and Technology.
         </Typography>
-        <Button>Join Us</Button>
+        <Button
+          variant="contained"
+          color="primary"
+          size="large"
+          className={classes.button}
+        >
+          Join Us
+        </Button>
       </Container>
     </div>
   );

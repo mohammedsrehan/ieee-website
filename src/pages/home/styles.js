@@ -7,7 +7,6 @@ export default makeStyles((theme) => ({
     gap: "20px",
     alignItems: "center",
     margin: "auto",
-    marginBottom: "20px",
   },
   container: {
     width: "100%",
@@ -17,14 +16,31 @@ export default makeStyles((theme) => ({
     zIndex: "-1",
   },
   mainSection: {
-    width: '70%',
+    width: "70%",
   },
   header: {
     position: "absolute",
     bottom: "0",
-    backgroundColor: "#12679b",
-    width: "100%",
-    opacity: "0.5",
+    backgroundColor: "rgba(18,103,155,0.6)",
+    width: "70%",
+    display: 'flex',
+    padding: '25px 15%',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  header__text: {
+    color: '#ffffff',
+  },
+  header__button: {
+    padding: '10px 50px',
+    height: 'max-content',
+    borderRadius: '25px',
+    color: '#12679b',
+    backgroundColor: "#ffffff",
+    "&:hover": {
+      backgroundColor: "#c21531",
+      color: '#ffffff',
+    }
   },
   paper: {
     padding: "30px",
@@ -47,14 +63,21 @@ export default makeStyles((theme) => ({
     width: "150px",
     height: "auto",
   },
+  event : {
+    margin: '25px 0px'
+  },
   events: {
-    display: "grid",
-    gridTemplateColumns: '1fr 1fr',
-    placeItems: 'center',
-    gap: "20px",
+    display: "flex",
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    gap: "25px",
+    margin: "20px 0px",
   },
   events_cards: {
     position: "relative",
+    width: "48%",
+    // flex: '1 0 auto',
+    // width: "max-width",
   },
   events_cards_image: {
     display: "flex",
@@ -72,7 +95,7 @@ export default makeStyles((theme) => ({
   },
   font: {
     color: "#ffffff",
-    padding: "5px"
+    padding: "5px",
   },
   font_viewAll: {
     color: "#ffffff",
@@ -80,39 +103,78 @@ export default makeStyles((theme) => ({
     right: "15px",
   },
   quizzes: {
-      gridColumn: "1/3",
+    gridColumn: "1/3",
   },
   img: {
-      height: '230px',
+    maxHeight: "100%",
+    minWidth: '50%'
   },
   ourChapters: {
+    display: "flex",
+    gap: '30px',
+    flexDirection: "column",
+    alignItems: "center",
+    margin: '30px 0',
+  },
+  chapter_cards: {
+    display: "flex",
+    width: "100%",
+    justifyContent: 'space-between',
+  },
+  chapters: {
+    padding: "20px",
+    borderRadius: "15px",
+  },
+  chapter_logo: {
+    height: "150px",
+    width: '250px',
+    objectFit: 'scale-down'
+  },
+  cards: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "40px",
+    margin: "50px",
+  },
+  card: {
+    width: "120px",
+    height: "100px",
+    padding: "25px",
+    textAlign: "center",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
+    borderRadius: "10px",
   },
-  chapter_cards: {
-      display: "flex",
-      gap: "20px",
+  red:{
+    color: '#ff4040'
   },
-  chapters: {
-    padding: '20px',
-    borderRadius: '15px',
+  bottomContainer: {
+    width: "100%",
+    backgroundColor: "#12679b",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "25px",
+    paddingBottom: '40px',
+    borderBottom: '2px solid #ffffff'
   },
-  chapter_logo: {
-      height: "150px",
+  text: {
+    textAlign: 'center',
+    width: '70%',
+    color: '#ffffff',
   },
-  cards: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      gap: "20px",
-      margin: "50px"
+  button: {
+    padding: '10px 40px',
+    color: '#12679b',
+    backgroundColor: "#ffffff",
+    "&:hover": {
+      backgroundColor: "#c21531",
+      color: '#ffffff',
+    }
   },
-  card: {
-      width: '120px',
-      height: '100px',
-      padding: '20px',
-      textAlign: 'center',
-  }
+
 }));
