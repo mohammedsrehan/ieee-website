@@ -45,21 +45,51 @@ const Footer = () => {
               REACH US AT :
             </Typography>
             <div className={classes.icons}>
-              <FacebookIcon />
-              <TwitterIcon />
+              <Link
+                href="https://twitter.com/ieeensakcet"
+                target="_blank"
+                rel="noopener"
+                color="inherit"
+              >
+                <FacebookIcon />
+              </Link>
+              <Link
+                href="https://twitter.com/ieeensakcet"
+                target="_blank"
+                rel="noopener"
+                color="inherit"
+              >
+                <TwitterIcon />
+              </Link>
+              <Link
+                href="https://www.instagram.com/ieeensakcet/?igshid=1rorsll9o8e06"
+                target="_blank"
+                rel="noopener"
+                color="inherit"
+              >
               <InstagramIcon />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/42773344/admin/"
+                target="_blank"
+                rel="noopener"
+                color="inherit"
+              >
               <LinkedInIcon />
+              </Link>
             </div>
           </div>
           <div className={classes.copyright}>
-            <Typography variant="body2">Copyright ieeensakcet @2021 All rights reserved</Typography>
+            <Typography variant="body2">
+              Copyright ieeensakcet @2021 All rights reserved
+            </Typography>
             <Typography variant="body2">
               <Link
                 href="https://www.ieee.org/security-privacy.html"
                 target="_blank"
                 rel="noopener"
-                color='inherit'
-                underline='none'
+                color="inherit"
+                underline="none"
               >
                 Privacy policy
               </Link>

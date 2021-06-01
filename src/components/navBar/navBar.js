@@ -1,5 +1,6 @@
-import { Paper } from "@material-ui/core";
+import { IconButton, Paper } from "@material-ui/core";
 import React from "react";
+import MenuIcon from "@material-ui/icons/Menu";
 import { Link } from "react-router-dom";
 import logo from "../../images/homePage/ieee-min.png";
 import "./style.css";
@@ -8,10 +9,10 @@ const NavBar = () => {
   return (
     <div>
       <nav className="navbar">
+        <Link to="/">
+          <img src={logo} className="logo" alt="logo" />
+        </Link>
         <ul className="list">
-          <Link to="/">
-            <img src={logo} className="logo" alt="logo" />
-          </Link>
           <li className="listItem">
             <Link to="/" className="link">
               HOME
@@ -23,11 +24,9 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="listItem hover">
-            <Link className="link">
-              EVENTS
-            </Link>
+            <Link className="link">EVENTS</Link>
             <Paper elevation={3} className="subListItem">
-              <ul className='subItem'>
+              <ul className="subItem">
                 <li className="listItem">
                   <Link to="/webinars" className="link">
                     WEBINARS
@@ -47,11 +46,9 @@ const NavBar = () => {
             </Paper>
           </li>
           <li className="listItem hover">
-            <Link className="link">
-              OUR CHAPTERS
-            </Link>
+            <Link className="link">OUR CHAPTERS</Link>
             <Paper elevation={3} className="subListItem">
-              <ul className='subItem'>
+              <ul className="subItem">
                 <li className="listItem">
                   <Link to="/cs" className="link">
                     COMPUTER SOCIETY
@@ -81,6 +78,13 @@ const NavBar = () => {
             </Link>
           </li>
         </ul>
+        <IconButton aria-label="menu">
+          <MenuIcon
+            onClick={() => {
+              alert("clicked");
+            }}
+          />
+        </IconButton>
       </nav>
     </div>
   );
