@@ -49,5 +49,21 @@ export default makeStyles((theme) => ({
     display: 'flex',
     gap: '50px',
     justifyContent: 'center',
+  },
+  [theme.breakpoints.down('xs')]: {
+    container: {
+      padding: '50px'
+    },
+    mainContainer: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '50px',
+    },
+    copyright: {
+      flexDirection: 'column',
+      gap: '20px',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
   }
 }));

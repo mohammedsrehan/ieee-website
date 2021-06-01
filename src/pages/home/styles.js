@@ -76,8 +76,6 @@ export default makeStyles((theme) => ({
   events_cards: {
     position: "relative",
     width: "48%",
-    // flex: '1 0 auto',
-    // width: "max-width",
   },
   events_cards_image: {
     display: "flex",
@@ -118,20 +116,26 @@ export default makeStyles((theme) => ({
   },
   chapter_cards: {
     display: "flex",
+    flexWrap: 'wrap',
+    // gap: '20px',
+    justifyContent: 'space-around',
     width: "100%",
-    justifyContent: 'space-between',
   },
   chapters: {
+    width: '25%',
+    display: "flex",
     padding: "20px",
     borderRadius: "15px",
+    height: '120px',
   },
   chapter_logo: {
-    height: "150px",
-    width: '250px',
-    objectFit: 'scale-down'
+    maxHeight: "100%",
+    minWidth: '100%',
+    objectFit: 'contain',
   },
   cards: {
     display: "flex",
+    flexWrap: 'wrap',
     alignItems: "center",
     justifyContent: "center",
     gap: "40px",
@@ -176,5 +180,9 @@ export default makeStyles((theme) => ({
       color: '#ffffff',
     }
   },
-
+  [theme.breakpoints.down('sm')]: {
+    events_cards: {
+      width: '100%',
+    }
+  }
 }));
