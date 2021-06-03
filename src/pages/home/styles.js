@@ -100,6 +100,10 @@ export default makeStyles((theme) => ({
     position: "absolute",
     right: "15px",
   },
+  link: {
+    textDecoration: 'none',
+    color: 'inherit',
+  },
   quizzes: {
     gridColumn: "1/3",
   },
@@ -115,14 +119,13 @@ export default makeStyles((theme) => ({
     margin: '30px 0',
   },
   chapter_cards: {
-    display: "flex",
-    flexWrap: 'wrap',
-    // gap: '20px',
+    display: "grid",
+    gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+    gap: '20px',
     justifyContent: 'space-around',
     width: "100%",
   },
   chapters: {
-    width: '25%',
     display: "flex",
     padding: "20px",
     borderRadius: "15px",
@@ -134,15 +137,13 @@ export default makeStyles((theme) => ({
     objectFit: 'contain',
   },
   cards: {
-    display: "flex",
-    flexWrap: 'wrap',
-    alignItems: "center",
-    justifyContent: "center",
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(130px, 1fr))",
     gap: "40px",
     margin: "50px",
+    width: '70%',
   },
   card: {
-    width: "120px",
     height: "100px",
     padding: "25px",
     textAlign: "center",
@@ -183,6 +184,11 @@ export default makeStyles((theme) => ({
   [theme.breakpoints.down('sm')]: {
     events_cards: {
       width: '100%',
+    },
+  },
+  [theme.breakpoints.down('xs')]: {
+    cards: {
+      width: '90%',
     }
   }
 }));

@@ -6,6 +6,7 @@ import poster1 from "../../images/webinars/Poster1.png";
 import csLogo from "../../images/homePage/IEEE-CS_Logo.png";
 import rasLogo from "../../images/homePage/ieee-ras-logo.png";
 import wieLogo from "../../images/homePage/ieee-wie-logo.png";
+import { Link } from "react-router-dom";
 
 function Home() {
   const classes = useStyles();
@@ -25,13 +26,13 @@ function Home() {
             </Typography>
           </div>
           <Button
-          variant="contained"
-          color="primary"
-          size="large"
-          className={classes.button}
-        >
-          Join Us
-        </Button>
+            variant="contained"
+            color="primary"
+            size="large"
+            className={classes.button}
+          >
+            Join Us
+          </Button>
         </section>
       </Container>
       <section className={classes.mainSection}>
@@ -77,7 +78,7 @@ function Home() {
                 Webinars
               </Typography>
               <Typography variant="body2" className={classes.font_viewAll}>
-                View All
+                <Link to="/webinars" className={classes.link}>View All</Link>
               </Typography>
             </header>
           </Paper>
@@ -91,7 +92,7 @@ function Home() {
                 Competitions
               </Typography>
               <Typography variant="body2" className={classes.font_viewAll}>
-                View All
+                <Link to="/competitions" className={classes.link}>View All</Link>
               </Typography>
             </header>
           </Paper>
@@ -108,7 +109,7 @@ function Home() {
                 Quizzes
               </Typography>
               <Typography variant="body2" className={classes.font_viewAll}>
-                View All
+                <Link to="/quizzes" className={classes.link}>View All</Link>
               </Typography>
             </header>
           </Paper>
