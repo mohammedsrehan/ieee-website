@@ -59,14 +59,17 @@
   display: none !important;
 }
 .root {
-  max-width: 360px;
-  position: absolute !important;
-  top: 75px;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #12679b;
+    min-width: 250px;
+    height: 100vh;
+    position: fixed !important;
+    top: 0px;
+    right: 0;
+    padding-top: 70px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #12679b;
+    z-index: 1;
 }
 .nested {
   padding-left: 30px !important;
@@ -86,6 +89,7 @@
   }
   .button {
     display: inline-block !important;
+    z-index: 2;
   }
   .list {
     display: none;
@@ -95,6 +99,9 @@
   }
   .link {
     color: #ffffff;
+  }
+  .buttonR{
+    z-index: 10;
   }
   
   
