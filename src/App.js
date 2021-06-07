@@ -1,6 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
+import {
+  createMuiTheme,
+  responsiveFontSizes,
+  ThemeProvider,
+} from "@material-ui/core/styles";
 import Home from "./pages/home/home";
 import AboutUs from "./pages/about/about";
 import JoinUs from "./pages/joinUs/joinUs";
@@ -14,9 +19,15 @@ import Competitions from "./pages/events/competitions/Competitions";
 import Webinars from "./pages/events/webinars/Webinars";
 import Quizzes from "./pages/events/quizzes/Quizzes";
 
+let theme = createMuiTheme();
+theme = responsiveFontSizes(theme);
+
 function App() {
   return (
     <div className="App">
+      <ThemeProvider theme={theme}>
+
+
       <Router>
         <NavBar />
 
@@ -56,6 +67,8 @@ function App() {
         </Switch>
         <Footer />
       </Router>
+      </ThemeProvider>
+
     </div>
   );
 }

@@ -51,7 +51,7 @@ function Home() {
           </Paper>
           <Paper elevation={8} className={classes.paper}>
             <div>
-              <img src={dartImage} alt="dart_image" />
+              <img src={dartImage} alt="dart_image" className={classes.image} />
             </div>
             <header className={classes.headers}>
               <Typography variant="h4">Vision</Typography>

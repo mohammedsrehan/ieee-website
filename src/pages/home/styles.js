@@ -22,7 +22,7 @@ export default makeStyles((theme) => ({
     position: "absolute",
     bottom: "0",
     backgroundColor: "rgba(18,103,155,0.6)",
-    width: "70%",
+    width: "100%",
     display: 'flex',
     padding: '25px 15%',
     justifyContent: 'space-between',
@@ -46,6 +46,7 @@ export default makeStyles((theme) => ({
     padding: "30px",
     display: "flex",
     flexDirection: "row",
+    alignItems: "center",
   },
   mission: {
     display: "flex",
@@ -144,7 +145,7 @@ export default makeStyles((theme) => ({
     width: '70%',
   },
   card: {
-    height: "100px",
+    height: "140px",
     padding: "25px",
     textAlign: "center",
     display: "flex",
@@ -182,13 +183,34 @@ export default makeStyles((theme) => ({
     }
   },
   [theme.breakpoints.down('sm')]: {
-    events_cards: {
-      width: '100%',
+    button: {
+      padding: '10px 20px',
+      minWidth: 'max-content',
     },
-  },
-  [theme.breakpoints.down('xs')]: {
+    header: {
+      padding: '5%',
+    },
+    mainSection: {
+      width: '90%',
+    },
+    events_cards: {
+      width: '80%',
+    },
     cards: {
       width: '90%',
+      gap: '25px',
+    }
+  },
+  [theme.breakpoints.down('xs')]: {
+    
+    image: {
+      width: '100px',
+    },
+    paper: {
+      padding: '15px',
+    },
+    events_cards: {
+      width: '100%',
     }
   }
 }));
