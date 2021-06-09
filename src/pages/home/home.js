@@ -18,7 +18,7 @@ function Home() {
         className={classes.container}
         disableGutters={true}
       >
-        <section className={classes.header}>
+        <div className={classes.header}>
           <div className={classes.header__text}>
             <Typography variant="h4">IEEE STUDENT BRANCH</Typography>
             <Typography variant="body1">
@@ -33,7 +33,7 @@ function Home() {
           >
             Join Us
           </Button>
-        </section>
+        </div>
       </Container>
       <section className={classes.mainSection}>
         <section className={classes.mission}>
@@ -78,7 +78,9 @@ function Home() {
                 Webinars
               </Typography>
               <Typography variant="body2" className={classes.font_viewAll}>
-                <Link to="/webinars" className={classes.link}>View All</Link>
+                <Link to="/webinars" className={classes.link}>
+                  View All
+                </Link>
               </Typography>
             </header>
           </Paper>
@@ -92,7 +94,9 @@ function Home() {
                 Competitions
               </Typography>
               <Typography variant="body2" className={classes.font_viewAll}>
-                <Link to="/competitions" className={classes.link}>View All</Link>
+                <Link to="/competitions" className={classes.link}>
+                  View All
+                </Link>
               </Typography>
             </header>
           </Paper>
@@ -109,7 +113,9 @@ function Home() {
                 Quizzes
               </Typography>
               <Typography variant="body2" className={classes.font_viewAll}>
-                <Link to="/quizzes" className={classes.link}>View All</Link>
+                <Link to="/quizzes" className={classes.link}>
+                  View All
+                </Link>
               </Typography>
             </header>
           </Paper>

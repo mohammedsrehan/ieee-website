@@ -11,8 +11,8 @@ export default makeStyles((theme) => ({
     
     cards: {
         display: 'grid',
-        gridTemplateColumns: "1fr 1fr",
-        width: '70%',
+        gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+        width: '90%',
         gap: '20px',
         placeContent: 'center',
         margin: '50px auto',
