@@ -13,7 +13,7 @@ export default makeStyles((theme) => ({
     backgroundColor: "#00b0ff",
     height: "100vh",
     position: "relative",
-    zIndex: "-1",
+    // zIndex: "-1",
   },
   mainSection: {
     width: "70%",

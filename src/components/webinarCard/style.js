@@ -3,11 +3,11 @@ import { makeStyles } from "@material-ui/core/styles";
 export default makeStyles((theme) => ({
 card: {
     display: 'flex',
-    maxWidth: '500px',
+    // maxWidth: '500px',
     position: 'relative',
 },
 image: {
-    width: '900px',
+    width: '150px',
     height: 'auto',
 },
 speakerDetails: {
@@ -17,6 +17,7 @@ speakerDetails: {
 content: {
     display: 'flex',
     flexDirection: 'column',
+    // flex: '1 0 auto',
     gap: '15px',
 },
 name: {
@@ -35,6 +36,9 @@ dateContent: {
     color: '#ffffff',
     textAlign: 'center',
     lineHeight: '1.23',
+},
+title: {
+    marginRight: '24px',
 }
 }));
 
