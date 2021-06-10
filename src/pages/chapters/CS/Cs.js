@@ -4,7 +4,7 @@ import './cs.css'
 const Cs = () => {
     return (
         <div>
-            <p className="CS">welcome to CS</p>
+            <p className="CS">Welcome to CSp page</p>
         </div>
     );
 };
