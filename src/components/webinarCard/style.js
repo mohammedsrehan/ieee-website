@@ -6,9 +6,15 @@ card: {
     // maxWidth: '500px',
     position: 'relative',
 },
-image: {
-    width: '150px',
+image__div: {
+    minWidth: '50%',
     height: 'auto',
+    backgroundColor: '#1f79ac',
+ },
+image: {
+    width: '100%',
+    height: '100%',
+    backgroundSize: 'contain',
 },
 speakerDetails: {
     borderLeft: '4px solid #c21430',

@@ -119,6 +119,25 @@ function Home() {
               </Typography>
             </header>
           </Paper>
+          <Paper
+            elevation={12}
+            className={`${classes.events_cards} ${classes.quizzes}`}
+          >
+            <div className={classes.events_cards_image}>
+              <img src={poster1} alt="webinar_image" className={classes.img} />
+              <img src={poster1} alt="webinar_image" className={classes.img} />
+            </div>
+            <header className={classes.events_cards_header}>
+              <Typography variant="h5" className={classes.font}>
+                Workshops
+              </Typography>
+              <Typography variant="body2" className={classes.font_viewAll}>
+                <Link to="/quizzes" className={classes.link}>
+                  View All
+                </Link>
+              </Typography>
+            </header>
+          </Paper>
         </section>
         <section className={classes.ourChapters}>
           <Typography variant="h3">OUR CHAPTERS</Typography>
