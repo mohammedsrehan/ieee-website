@@ -14,7 +14,7 @@ const WebinarCard = ({
   return (
     <div>
       <Card className={classes.card} raised={true}>
-        <div>
+        <div className={classes.image__div}>
           <CardMedia className={classes.image} image={image} title="webinar" />
         </div>
         <CardContent className={classes.content}>
