@@ -50,6 +50,10 @@ export default makeStyles((theme) => ({
     gap: '50px',
     justifyContent: 'center',
   },
+  text: {
+    textDecoration: "none",
+    color: "#ffffff",
+  },
   [theme.breakpoints.down('xs')]: {
     container: {
       padding: '50px'

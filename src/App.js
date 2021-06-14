@@ -18,6 +18,7 @@ import Ras from "./pages/chapters/RAS/Ras";
 import Competitions from "./pages/events/competitions/Competitions";
 import Webinars from "./pages/events/webinars/Webinars";
 import Quizzes from "./pages/events/quizzes/Quizzes";
+import Login from "./components/login/login";
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -60,6 +61,9 @@ function App() {
           </Route>
           <Route path="/quizzes">
             <Quizzes />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="/">
             <Home />

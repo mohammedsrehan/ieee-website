@@ -1,7 +1,6 @@
 import { Container, Typography } from "@material-ui/core";
 import React from "react";
 import useStyles from "./style";
-
 import {
   createMuiTheme,
   responsiveFontSizes,
@@ -11,7 +10,12 @@ import {
 import WebinarCard from "../../../components/webinarCard/webinarCard";
 
 import "./style.js";
-import { webinars } from "../../../data/webinars";
+import CreateWebinar from "../../../components/webinarCard/CreateWebinar";
+import { useCollection } from 'react-firebase-hooks/firestore';
+import { db } from "../../../config/firebaseConfig";
+import { useSelector } from "react-redux";
+import { selectUser } from "../../../features/counter/counterSlice";
+
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -19,6 +23,11 @@ theme = responsiveFontSizes(theme);
 const Webinars = () => {
   const classes = useStyles();
 
+  const [events, loading, error] = useCollection(db.collection('events'))
+  const user = useSelector(selectUser);
+
+
+  
   return (
     <ThemeProvider theme={theme}>
       <div className={classes.webinars}>
@@ -31,17 +40,24 @@ const Webinars = () => {
             <Typography variant="h4">OUR ORATORS</Typography>
           </div>
         </Container>
+        { user ?
+          <CreateWebinar /> : ''
+        }
+        {error && <strong>Error: {JSON.stringify(error)}</strong>}
+        {loading && <span>Collection: Loading...</span>}
         <div className={classes.cards}>
-          {webinars.map((info) => (
+          {events?.docs.map((info) => (
             <WebinarCard
-              title={info.title}
-              speakerName={info.speakerName}
-              speakerDetails={info.speakerDetails}
-              eventDescription={info.eventDescription}
-              date={info.date}
-              image={info.image}
+              key={info.id}
+              title={info.data().title}
+              speakerName={info.data().speakerName}
+              speakerDetails={info.data().speakerDetails}
+              eventDescription={info.data().eventDescription}
+              date={info.data().date}
+              image={info.data().image}
             />
           ))}
+          
         </div>
       </div>
     </ThemeProvider>
