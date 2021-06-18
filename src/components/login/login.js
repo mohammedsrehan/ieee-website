@@ -29,6 +29,9 @@ function Login() {
 
         history.replace("/");
       };
+    
+    
+
     const onInputChange = (e) => {
         setUserInfo({ ...userInfo, [e.target.name]: e.target.value });
     };
@@ -38,7 +41,7 @@ function Login() {
                   <div className="form-group">
                   <label htmlFor="email">Email</label>
                     <input
-                      className="input"
+                      className="inputs"
                       name="email"
                       placeholder="Enter Your E-mail"
                       value={userInfo.email}
@@ -49,7 +52,7 @@ function Login() {
                   <div className="form-group">
                   <label htmlFor="password">Password:</label>
                     <input
-                      className="input"
+                      className="inputs"
                       type="password"
                       name="password"
                       placeholder="Enter Your Password"
