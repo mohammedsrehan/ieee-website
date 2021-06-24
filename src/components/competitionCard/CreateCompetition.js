@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { auth } from "../../config/firebaseConfig";
-import { createProject } from "../../features/eventSlice";
+import { createCompetition } from "../../features/competitionSlice";
 import { logout } from "../../features/userSlice";
 
-import "./createWebinar.css";
+import './CreateCompetition.css'
 
-function CreateWebinar() {
-  const [shareImage, setShareImage] = useState()
+function CreateCompetition() {
+  const [shareImage, setShareImage] = useState();
   const [state, setState] = useState({
     title: "",
-    speakerName: "",
-    speakerDetails: "",
-    eventDescription: "",
+    subTitle: "",
+    Details1: "",
+    Details2: "",
+    Details3: "",
     date: "",
     image: null,
   });
@@ -29,7 +30,7 @@ function CreateWebinar() {
       ...state,
       [e.target.id]: e.target.files[0],
     });
-    setShareImage(e.target.files[0])
+    setShareImage(e.target.files[0]);
   };
 
   const signout = () => {
@@ -46,14 +47,15 @@ function CreateWebinar() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(createProject(state));
+    dispatch(createCompetition(state));
   };
+
   return (
     <div className="container">
       <button className="signout" onClick={signout}>
         Signout
       </button>
-      <h2 className="Title">Add a New Event</h2>
+      <h2 className="Title">Add a New Competition</h2>
       <form className="form-create" onSubmit={handleSubmit}>
         <div className="left">
           <div className="input-field">
@@ -67,33 +69,46 @@ function CreateWebinar() {
             />
           </div>
           <div className="input-field">
-            <label htmlFor="speakerName">Speaker Name</label>
+            <label htmlFor="speakerName">SubTitle</label>
             <input
               className="input"
               autoComplete="off"
               type="text"
-              id="speakerName"
+              id="subTitle"
               onChange={handleChange}
             />
           </div>
           <div className="input-field">
-            <label htmlFor="speakerDetails">Speaker Details</label>
+            <label htmlFor="speakerDetails">Details 1</label>
             <input
               className="input"
               autoComplete="off"
               type="text"
-              id="speakerDetails"
+              id="Details1"
               onChange={handleChange}
             />
           </div>
           <div className="input-field">
-            <label htmlFor="eventDescription">Event Description</label>
-            <textarea
-              id="eventDescription"
-              className="input text-area"
+            <label htmlFor="speakerDetails">Details 2</label>
+            <input
+              className="input"
+              autoComplete="off"
+              type="text"
+              id="Details2"
               onChange={handleChange}
-            ></textarea>
+            />
           </div>
+          <div className="input-field">
+            <label htmlFor="speakerDetails">Details 3</label>
+            <input
+              className="input"
+              autoComplete="off"
+              type="text"
+              id="Details3"
+              onChange={handleChange}
+            />
+          </div>
+          
           <div className="input-field">
             <label htmlFor="date">Date</label>
             <input
@@ -103,7 +118,6 @@ function CreateWebinar() {
               onChange={handleChange}
             />
           </div>
-          
         </div>
         <div className="right">
           <div className="input-field">
@@ -115,15 +129,16 @@ function CreateWebinar() {
               onChange={handleImage}
             />
           </div>
-          {shareImage && <img src={URL.createObjectURL(shareImage)} alt='pic'/>}
+          {shareImage && (
+            <img src={URL.createObjectURL(shareImage)} alt="pic" />
+          )}
           <div>
             <button className="create-button">Create</button>
           </div>
-
         </div>
       </form>
     </div>
   );
 }
 
-export default CreateWebinar;
+export default CreateCompetition;

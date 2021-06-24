@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 import { auth } from '../../config/firebaseConfig'
-import { login } from '../../features/counter/counterSlice'
+import { login } from '../../features/userSlice'
 
 
 import './style.css'

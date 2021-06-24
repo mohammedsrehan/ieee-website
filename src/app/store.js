@@ -1,8 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from '../features/counter/counterSlice'
+import userReducer from '../features/userSlice'
+import eventReducer from '../features/eventSlice'
+import competitionReducer from '../features/competitionSlice'
+import workshopReducer from '../features/workshopSlice'
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    users: userReducer,
+    events: eventReducer,
+    competitions: competitionReducer,
+    workshops: workshopReducer,
   },
 })

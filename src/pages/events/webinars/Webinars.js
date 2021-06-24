@@ -14,7 +14,7 @@ import CreateWebinar from "../../../components/webinarCard/CreateWebinar";
 import { useCollection } from 'react-firebase-hooks/firestore';
 import { db } from "../../../config/firebaseConfig";
 import { useSelector } from "react-redux";
-import { selectUser } from "../../../features/counter/counterSlice";
+import { selectUser } from "../../../features/userSlice";
 
 
 let theme = createMuiTheme();

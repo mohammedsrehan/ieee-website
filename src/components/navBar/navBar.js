@@ -84,6 +84,11 @@ const NavBar = () => {
                 <ListItemText primary="COMPETITIONS" />
               </Link>
             </ListItem>
+            <ListItem button className={classes.nested}>
+              <Link to="/workshops" className={classes.text}>
+                <ListItemText primary="WORKSHOPS" />
+              </Link>
+            </ListItem>
           </List>
         </Collapse>
         <ListItem button onClick={handleClick}>
@@ -170,6 +175,14 @@ const NavBar = () => {
                     className={classes.navbar__list__listItem__link}
                   >
                     COMPETITIONS
+                  </Link>
+                </li>
+                <li className={classes.navbar__list__listItem}>
+                  <Link
+                    to="/workshops"
+                    className={classes.navbar__list__listItem__link}
+                  >
+                    WORKSHOPS
                   </Link>
                 </li>
               </ul>

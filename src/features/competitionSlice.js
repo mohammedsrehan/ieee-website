@@ -1,23 +1,18 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { db, storage } from '../../config/firebaseConfig'
+import { db, storage } from '../config/firebaseConfig'
 
-export const counterSlice = createSlice({
-  name: 'counter',
+export const competitionSlice = createSlice({
+  name: 'competitions',
   initialState: {
-    user: null,
+    competition: null,
   },
   reducers: {
-    login: (state, action) => {
-      state.user = action.payload
-    },
-    logout: (state) => {
-      state.user = null
-    },
-    createProject: (state, action) => {
+    //create a competition
+    createCompetition: (state, action) => {
 
       if(action.payload.image !== ''){
         const upload = storage
-          .ref(`events/${action.payload.image.name}`)
+          .ref(`competitions/${action.payload.image.name}`)
           .put(action.payload.image)
         upload.on("state_changed", 
         (snapshot) => {
@@ -30,25 +25,26 @@ export const counterSlice = createSlice({
         (error) => console.log(error.code),
         async () => {
           const downloadURL = await upload.snapshot.ref.getDownloadURL()
-          console.log('created project', action.payload)
-          db.collection('events').add({
+          console.log('created competition', action.payload)
+          db.collection('competitions').add({
             title: action.payload.title,
-            speakerName: action.payload.speakerName,
-            speakerDetails: action.payload.speakerDetails,
-            eventDescription: action.payload.eventDescription,
+            subTitle: action.payload.subTitle,
+            Details1: action.payload.Details1,
+            Details2: action.payload.Details2,
+            Details3: action.payload.Details3,
             date: action.payload.date,
             image: downloadURL,
           })
         }
         )
       }
-    }
+    },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { logout, createProject, login } = counterSlice.actions
+export const { createCompetition } = competitionSlice.actions
 
-export const selectUser = (state) => state.counter.user
+export const selectUser = (state) => state.competitions.competition
 
-export default counterSlice.reducer
+export default competitionSlice.reducer

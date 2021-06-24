@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Accordion,
   AccordionDetails,
@@ -5,9 +6,24 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core";
-import React from "react";
+import {
+  Timeline,
+  TimelineItem,
+  TimelineSeparator,
+  TimelineConnector,
+  TimelineContent,
+  TimelineDot,
+} from "@material-ui/lab";
 
 import college from "./images/college.webp";
+import pyramid from "./images/pyramid.svg";
+import seminar from "./images/seminar.png";
+import hackathon from "./images/hackathon.png";
+import competition from "./images/competition.png";
+import network from "./images/network.png";
+import webinar from "./images/webinar.png";
+import workshops from "./images/workshop.png";
+import work from "./images/work.png";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 import useStyles from "./style";
@@ -18,15 +34,22 @@ function About() {
   return (
     <div className={classes.About}>
       <Paper elevation={10} className={classes.About__about}>
-        <img src={college} alt="college" />
+        <img
+          src={college}
+          alt="college"
+          className={classes.About__about__image}
+        />
         <div className={classes.About__about__text}>
-          <Typography variant="h5">
+          <Typography
+            variant="h4"
+            className={classes.About__about__text__header}
+          >
             IEEE Student Branch of Nawab Shah Alam Khan College of Engineering
             and Technology
           </Typography>
-          <Typography variant="body1">
-            is a student community that strives to inform, learn, entertain, and
-            inspire action through the events and experiences we create. We
+          <Typography variant="h6">
+            It is a student community that strives to inform, learn, entertain,
+            and inspire action through the events and experiences we create. We
             promote student empowerment, develop professional skills, and foster
             technological innovations and build networks. ​ Our community
             consists of amateurs to experts, who understand the potential of
@@ -35,8 +58,17 @@ function About() {
         </div>
       </Paper>
       <Paper elevation={12} className={classes.About__ourCommunity}>
-        <Typography variant="h4">OUR COMMUNITY</Typography>
-        <img src={college} alt="pyramid" />
+        <Typography
+          variant="h4"
+          className={classes.About__ourCommunity__header}
+        >
+          OUR COMMUNITY
+        </Typography>
+        <img
+          src={pyramid}
+          alt="pyramid"
+          className={classes.About__ourCommunity__pyramid}
+        />
         <div className={classes.About__ourCommunity__text}>
           <Typography variant="h6">
             IEEE has its community around the globe, with more than 420,000 IEEE
@@ -50,10 +82,87 @@ function About() {
           </Typography>
         </div>
       </Paper>
-      <section className={classes.About__WhatWeDo}></section>
+      <section className={classes.About__WhatWeDo}>
+        <Typography variant="h4" className={classes.About__WhatWeDo__header}>WHAT WE DO</Typography>
+        <Timeline align="left" className={classes.About__WhatWeDo__timeline}>
+          <TimelineItem>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper elevation={8} className={classes.About__WhatWeDo__paper}>
+                <img src={seminar} alt="seminars" />
+                <Typography>Seminars</Typography>
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper elevation={8} className={classes.About__WhatWeDo__paper}>
+                <img src={webinar} alt="webinars" />
+                <Typography>Webinars</Typography>
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper elevation={8} className={classes.About__WhatWeDo__paper}>
+                <img src={workshops} alt="workshops" />
+                <Typography>Workshops</Typography>
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper elevation={8} className={classes.About__WhatWeDo__paper}>
+                <img src={competition} alt="competition" />
+                <Typography>Competitions</Typography>
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper elevation={8} className={classes.About__WhatWeDo__paper}>
+                <img src={hackathon} alt="hackathon" />
+                <Typography>Hackathons</Typography>
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineSeparator>
+              <TimelineDot />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper elevation={8} className={classes.About__WhatWeDo__paper}>
+                <img src={network} alt="network" />
+                <Typography>Help Build Network</Typography>
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
+        </Timeline>
+      </section>
       <Paper elevation={10} className={classes.About__Work}>
-        <Typography variant="h4">HOW WE WORK</Typography>
-        <img src={college} alt="work" />
+        <Typography variant="h4" className={classes.About__Work__header}>
+          HOW WE WORK
+        </Typography>
+        <img src={work} alt="work" className={classes.About__Work__image}/>
         <div>
           <Accordion className={classes.About__accordion}>
             <AccordionSummary

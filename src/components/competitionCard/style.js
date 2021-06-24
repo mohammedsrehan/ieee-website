@@ -5,9 +5,11 @@ card: {
     display: 'flex',
     // maxWidth: '500px',
     flexDirection: 'column',
-    position: 'relative',
+    // position: 'relative',
 },
 image__div: {
+    // minWidth: '50%',
+    // height: 'auto',
     backgroundColor: '#1f79ac',
  },
 image: {
@@ -15,7 +17,7 @@ image: {
     height: '300px',
     backgroundSize: 'contain',
 },
-speakerDetails: {
+Details: {
     borderLeft: '4px solid #c21430',
     padding: '3px 10px',
 },
@@ -25,7 +27,7 @@ content: {
     // flex: '1 0 auto',
     gap: '15px',
 },
-name: {
+prizes: {
     color: '#c21430',
 },
 date: {

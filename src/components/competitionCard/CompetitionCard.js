@@ -1,21 +1,24 @@
-import React from "react";
 import { Card, CardContent, CardMedia, Typography } from "@material-ui/core";
+import React from "react";
+
 import useStyles from "./style";
 
-const WebinarCard = ({
+const CompetitionCard = ({
   title,
-  speakerName,
-  speakerDetails,
-  eventDescription,
+  subTitle,
+  Details1,
+  Details2,
+  Details3,
   date,
   image,
 }) => {
   const classes = useStyles();
+
   return (
     <div>
       <Card className={classes.card} raised={true}>
         <div className={classes.image__div}>
-          <CardMedia className={classes.image} image={image} title="webinar" />
+          <CardMedia className={classes.image} image={image} title="competition" />
         </div>
         <CardContent className={classes.content}>
           <div className={classes.date}>
@@ -24,22 +27,22 @@ const WebinarCard = ({
             </Typography>
           </div>
           <div>
-            <Typography variant="subtitle1">Webinar On</Typography>
             <Typography variant="h6" className={classes.title}>
               {title}
             </Typography>
           </div>
-          <div className={classes.speakerDetails}>
-            <Typography variant="subtitle1" className={classes.name}>
-              {speakerName}
+          <div className={classes.Details}>
+            <Typography variant="subtitle1" className={classes.prizes}>
+              {subTitle}
             </Typography>
-            <Typography variant="body2">{speakerDetails}</Typography>
+            <Typography variant="body2">{Details1}</Typography>
+            <Typography variant="body2">{Details2}</Typography>
+            <Typography variant="body2">{Details3}</Typography>
           </div>
-          <Typography variant="body2">{eventDescription}</Typography>
         </CardContent>
       </Card>
     </div>
   );
-};
+}
 
-export default WebinarCard;
+export default CompetitionCard;
