@@ -4,13 +4,17 @@ import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
+  Avatar,
   Button,
   Typography,
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 import useStyles from "./style";
 
+import image from "../../images/profiles/person.jpg";
 import network from "./images/network.webp";
 import thinking from "./images/thinking.webp";
 
@@ -35,24 +39,42 @@ const JoinUs = () => {
         </Button>
       </section>
       <section className={classes.JoinUs__benefits}>
-        <div className={`${classes.JoinUs__benefits__benefit} ${classes.JoinUs__benefits__benefit__grey}`}>
-          <img src={network} alt="skills" className={classes.JoinUs__benefits__benefit__image}  />
+        <div
+          className={`${classes.JoinUs__benefits__benefit} ${classes.JoinUs__benefits__benefit__grey}`}
+        >
+          <img
+            src={network}
+            alt="skills"
+            className={classes.JoinUs__benefits__benefit__image}
+          />
           <Typography variant="h6">SOFT SKILLS</Typography>
           <Typography variant="body1">
             Build your professional skills including leadership, teamwork,
             communication, and prioritization
           </Typography>
         </div>
-        <div className={`${classes.JoinUs__benefits__benefit} ${classes.JoinUs__benefits__benefit__blue}`}>
-          <img src={network} alt="skills" className={classes.JoinUs__benefits__benefit__image} />
+        <div
+          className={`${classes.JoinUs__benefits__benefit} ${classes.JoinUs__benefits__benefit__blue}`}
+        >
+          <img
+            src={network}
+            alt="skills"
+            className={classes.JoinUs__benefits__benefit__image}
+          />
           <Typography variant="h6">SOFT SKILLS</Typography>
           <Typography variant="body1">
             Build your professional skills including leadership, teamwork,
             communication, and prioritization
           </Typography>
         </div>
-        <div className={`${classes.JoinUs__benefits__benefit} ${classes.JoinUs__benefits__benefit__grey}`}>
-          <img src={network} alt="skills" className={classes.JoinUs__benefits__benefit__image}/>
+        <div
+          className={`${classes.JoinUs__benefits__benefit} ${classes.JoinUs__benefits__benefit__grey}`}
+        >
+          <img
+            src={network}
+            alt="skills"
+            className={classes.JoinUs__benefits__benefit__image}
+          />
           <Typography variant="h6">SOFT SKILLS</Typography>
           <Typography variant="body1">
             Build your professional skills including leadership, teamwork,
@@ -60,7 +82,11 @@ const JoinUs = () => {
           </Typography>
         </div>
         <div className={classes.JoinUs__benefits__benefit}>
-          <img src={network} alt="skills" className={classes.JoinUs__benefits__benefit__image}/>
+          <img
+            src={network}
+            alt="skills"
+            className={classes.JoinUs__benefits__benefit__image}
+          />
           <Typography variant="h6">SOFT SKILLS</Typography>
           <Typography variant="body1">
             Build your professional skills including leadership, teamwork,
@@ -68,15 +94,25 @@ const JoinUs = () => {
           </Typography>
         </div>
         <div className={classes.JoinUs__benefits__benefit}>
-          <img src={network} alt="skills" className={classes.JoinUs__benefits__benefit__image}/>
+          <img
+            src={network}
+            alt="skills"
+            className={classes.JoinUs__benefits__benefit__image}
+          />
           <Typography variant="h6">SOFT SKILLS</Typography>
           <Typography variant="body1">
             Build your professional skills including leadership, teamwork,
             communication, and prioritization
           </Typography>
         </div>
-        <div className={`${classes.JoinUs__benefits__benefit} ${classes.JoinUs__benefits__benefit__grey}`}>
-          <img src={network} alt="skills" className={classes.JoinUs__benefits__benefit__image}/>
+        <div
+          className={`${classes.JoinUs__benefits__benefit} ${classes.JoinUs__benefits__benefit__grey}`}
+        >
+          <img
+            src={network}
+            alt="skills"
+            className={classes.JoinUs__benefits__benefit__image}
+          />
           <Typography variant="h6">SOFT SKILLS</Typography>
           <Typography variant="body1">
             Build your professional skills including leadership, teamwork,
@@ -84,15 +120,25 @@ const JoinUs = () => {
           </Typography>
         </div>
         <div className={classes.JoinUs__benefits__benefit}>
-          <img src={network} alt="skills" className={classes.JoinUs__benefits__benefit__image}/>
+          <img
+            src={network}
+            alt="skills"
+            className={classes.JoinUs__benefits__benefit__image}
+          />
           <Typography variant="h6">SOFT SKILLS</Typography>
           <Typography variant="body1">
             Build your professional skills including leadership, teamwork,
             communication, and prioritization
           </Typography>
         </div>
-        <div className={`${classes.JoinUs__benefits__benefit} ${classes.JoinUs__benefits__benefit__grey}`}>
-          <img src={network} alt="skills" className={classes.JoinUs__benefits__benefit__image}/>
+        <div
+          className={`${classes.JoinUs__benefits__benefit} ${classes.JoinUs__benefits__benefit__grey}`}
+        >
+          <img
+            src={network}
+            alt="skills"
+            className={classes.JoinUs__benefits__benefit__image}
+          />
           <Typography variant="h6">SOFT SKILLS</Typography>
           <Typography variant="body1">
             Build your professional skills including leadership, teamwork,
@@ -123,14 +169,56 @@ const JoinUs = () => {
           Finder to know more...
         </Typography>
       </section>
-      <section className={classes.JoinUs__testemonials}>Tesetemonials</section>
+      <section className={classes.JoinUs__testemonials}>
+        <Carousel
+          autoPlay={true}
+          infiniteLoop={true}
+          showThumbs={false}
+          interval={5000}
+        >
+          <div className={classes.JoinUs__testemonials__carousel}>
+            <Typography variant="h4">Testemonials</Typography>
+            <div className={classes.JoinUs__testemonials__carousel__content}>
+              <div
+                className={
+                  classes.JoinUs__testemonials__carousel__content__person
+                }
+              >
+                <Avatar
+                  alt="Remy Sharp"
+                  src={image}
+                  className={
+                    classes.JoinUs__testemonials__carousel__content__person__image
+                  }
+                />
+                <Typography variant="subtitle1">Name of Person</Typography>
+                <Typography variant="button">desig</Typography>
+              </div>
+              <Typography variant="body1">
+                "Our IEEE Student Branch provides networking opportunities among
+                various entrepreneurs and students so that the members achieve
+                problem-solving and leadership skills, this will help students
+                to come up with new ideas and to determine what they are willing
+                to achieve. The Student Branch teaches the students about the
+                professional environment of the corporate world and also
+                provides technical and fun activities to keep the students
+                active and engaged throughout their campus life."
+              </Typography>
+            </div>
+          </div>
+        </Carousel>
+      </section>
       <section className={classes.JoinUs__accordion}>
         <Typography className={classes.JoinUs__accordion__heading} variant="h4">
           FAQ
         </Typography>
         <Accordion className={classes.JoinUs__accordion__accordion}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon className={classes.JoinUs__accordion__accordion__expandLogo} />}
+            expandIcon={
+              <ExpandMoreIcon
+                className={classes.JoinUs__accordion__accordion__expandLogo}
+              />
+            }
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
@@ -146,7 +234,11 @@ const JoinUs = () => {
         </Accordion>
         <Accordion className={classes.JoinUs__accordion__accordion}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon className={classes.JoinUs__accordion__accordion__expandLogo} />}
+            expandIcon={
+              <ExpandMoreIcon
+                className={classes.JoinUs__accordion__accordion__expandLogo}
+              />
+            }
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
@@ -162,7 +254,11 @@ const JoinUs = () => {
         </Accordion>
         <Accordion className={classes.JoinUs__accordion__accordion}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon className={classes.JoinUs__accordion__accordion__expandLogo} />}
+            expandIcon={
+              <ExpandMoreIcon
+                className={classes.JoinUs__accordion__accordion__expandLogo}
+              />
+            }
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
@@ -176,7 +272,11 @@ const JoinUs = () => {
         </Accordion>
         <Accordion className={classes.JoinUs__accordion__accordion}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon className={classes.JoinUs__accordion__accordion__expandLogo} />}
+            expandIcon={
+              <ExpandMoreIcon
+                className={classes.JoinUs__accordion__accordion__expandLogo}
+              />
+            }
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
@@ -195,7 +295,11 @@ const JoinUs = () => {
         </Accordion>
         <Accordion className={classes.JoinUs__accordion__accordion}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon className={classes.JoinUs__accordion__accordion__expandLogo} />}
+            expandIcon={
+              <ExpandMoreIcon
+                className={classes.JoinUs__accordion__accordion__expandLogo}
+              />
+            }
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
@@ -209,7 +313,11 @@ const JoinUs = () => {
         </Accordion>
         <Accordion className={classes.JoinUs__accordion__accordion}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon className={classes.JoinUs__accordion__accordion__expandLogo} />}
+            expandIcon={
+              <ExpandMoreIcon
+                className={classes.JoinUs__accordion__accordion__expandLogo}
+              />
+            }
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
@@ -224,13 +332,15 @@ const JoinUs = () => {
         </Accordion>
         <Accordion className={classes.JoinUs__accordion__accordion}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon className={classes.JoinUs__accordion__accordion__expandLogo} />}
+            expandIcon={
+              <ExpandMoreIcon
+                className={classes.JoinUs__accordion__accordion__expandLogo}
+              />
+            }
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <Typography variant="h6">
-              Why do students join the IEEE?
-            </Typography>
+            <Typography variant="h6">Why do students join the IEEE?</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>

@@ -13,6 +13,8 @@ const WorkshopCard = ({
 }) => {
   const classes = useStyles();
 
+  let formattedDate = new Date(date);
+
   return (
     <div className={classes.WorkshopCard}>
       <Card className={classes.card} raised={true}>
@@ -22,7 +24,7 @@ const WorkshopCard = ({
         <CardContent className={classes.content}>
           <div className={classes.date}>
             <Typography variant="caption" className={classes.dateContent}>
-              {date}
+              {formattedDate.toDateString()}
             </Typography>
           </div>
           <div>
@@ -35,18 +37,14 @@ const WorkshopCard = ({
             <Typography variant="subtitle1" className={classes.name}>
               What's in the workshop
             </Typography>
-            <Typography variant="body2">
-              {Project1}
-            </Typography>
+            <Typography variant="body2">{Project1}</Typography>
             <Typography variant="body2">{Project2}</Typography>
           </div>
-          <Typography variant="body2">
-            {description}
-          </Typography>
+          <Typography variant="body2">{description}</Typography>
         </CardContent>
       </Card>
     </div>
   );
-}
+};
 
 export default WorkshopCard;
