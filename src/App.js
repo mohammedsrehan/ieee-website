@@ -17,12 +17,30 @@ import Wie from "./pages/chapters/WIE/Wie";
 import Ras from "./pages/chapters/RAS/Ras";
 import Competitions from "./pages/events/competitions/Competitions";
 import Webinars from "./pages/events/webinars/Webinars";
+import Workshops from "./pages/events/workshops/Workshops";
 import Quizzes from "./pages/events/quizzes/Quizzes";
+import Login from "./components/login/login";
+import { auth } from "./config/firebaseConfig";
+import { useDispatch } from 'react-redux'
+import { login } from "./features/userSlice";
+
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
 function App() {
+  const dispatch = useDispatch()
+
+  auth.onAuthStateChanged((user) => {
+    console.log(user)
+    if (user !== null) {
+      dispatch(login({
+        email: user.email,
+        uid: user.uid,
+    }))
+    }
+  })
+
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
@@ -60,6 +78,12 @@ function App() {
           </Route>
           <Route path="/quizzes">
             <Quizzes />
+          </Route>
+          <Route path="/workshops">
+            <Workshops />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="/">
             <Home />

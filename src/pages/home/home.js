@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Container, Paper, Typography } from "@material-ui/core";
 import useStyles from "./styles";
 import dartImage from "../../images/homePage/dart.png";
-import poster1 from "../../images/webinars/Poster1.png";
+import poster1 from "../../images/webinars/Poster.webp";
 import csLogo from "../../images/homePage/IEEE-CS_Logo.png";
 import rasLogo from "../../images/homePage/ieee-ras-logo.png";
 import wieLogo from "../../images/homePage/ieee-wie-logo.png";

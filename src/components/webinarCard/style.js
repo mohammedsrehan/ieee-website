@@ -4,16 +4,15 @@ export default makeStyles((theme) => ({
 card: {
     display: 'flex',
     // maxWidth: '500px',
+    flexDirection: 'column',
     position: 'relative',
 },
 image__div: {
-    minWidth: '50%',
-    height: 'auto',
     backgroundColor: '#1f79ac',
  },
 image: {
     width: '100%',
-    height: '100%',
+    height: '300px',
     backgroundSize: 'contain',
 },
 speakerDetails: {
@@ -30,17 +29,17 @@ name: {
     color: '#c21430',
 },
 date: {
-    clipPath: 'polygon(0 0, 100% 0, 100% 80%, 49% 100%, 0 80%)',
-    backgroundColor: '#c21430',
-    position: 'absolute',
-    top: '0',
-    right: '0',
-    width: '40px',
-    height: '60px',
+    // clipPath: 'polygon(0 0, 100% 0, 100% 80%, 49% 100%, 0 80%)',
+    // backgroundColor: '#c21430',
+    // position: 'absolute',
+    // top: '0',
+    // right: '0',
+    // width: '40px',
+    // height: '60px',
 },
 dateContent: {
-    color: '#ffffff',
-    textAlign: 'center',
+    // color: '#ffffff',
+    // textAlign: 'center',
     lineHeight: '1.23',
 },
 title: {

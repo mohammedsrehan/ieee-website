@@ -1,5 +1,5 @@
-import { Card, CardContent, CardMedia, Typography } from "@material-ui/core";
 import React from "react";
+import { Card, CardContent, CardMedia, Typography } from "@material-ui/core";
 import useStyles from "./style";
 
 const WebinarCard = ({
@@ -11,6 +11,9 @@ const WebinarCard = ({
   image,
 }) => {
   const classes = useStyles();
+
+  let formattedDate = new Date(date);
+
   return (
     <div>
       <Card className={classes.card} raised={true}>
@@ -19,8 +22,8 @@ const WebinarCard = ({
         </div>
         <CardContent className={classes.content}>
           <div className={classes.date}>
-            <Typography variant="body2" className={classes.dateContent}>
-              {date}
+            <Typography variant="caption" className={classes.dateContent}>
+              {formattedDate.toDateString()}
             </Typography>
           </div>
           <div>

@@ -10,7 +10,7 @@ export default makeStyles((theme) => ({
     backgroundColor: "#ffffff",
   },
   navbar__logo: {
-    height: "75px",
+    height: "60px",
     /* image-rendering: pixelated; */
   },
   navbar__list: {
@@ -78,7 +78,7 @@ export default makeStyles((theme) => ({
       position: "relative",
     },
     navbar__logo: {
-      height: "60px",
+      height: "50px",
     },
     button: {
       display: "inline-block",

@@ -8,6 +8,8 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import MailIcon from "@material-ui/icons/Mail";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import { Link as RouterLink } from "react-router-dom";
+
 
 const Footer = () => {
   const classes = useStyles();
@@ -93,6 +95,11 @@ const Footer = () => {
               >
                 Privacy policy
               </Link>
+            </Typography>
+            <Typography variant="body2">
+              <RouterLink to='/login' className={classes.text}>
+                Member login
+              </RouterLink>
             </Typography>
           </div>
         </div>

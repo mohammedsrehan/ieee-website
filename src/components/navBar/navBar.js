@@ -11,7 +11,7 @@ import {
 import React, { useState } from "react";
 import MenuIcon from "@material-ui/icons/Menu";
 import { Link } from "react-router-dom";
-import logo from "../../images/homePage/ieee-min.png";
+import logo from "../../images/homePage/logo.webp";
 import useStyles from "./style";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import { ExpandLess, ExpandMore } from "@material-ui/icons";
@@ -82,6 +82,11 @@ const NavBar = () => {
             <ListItem button className={classes.nested}>
               <Link to="/competitions" className={classes.text}>
                 <ListItemText primary="COMPETITIONS" />
+              </Link>
+            </ListItem>
+            <ListItem button className={classes.nested}>
+              <Link to="/workshops" className={classes.text}>
+                <ListItemText primary="WORKSHOPS" />
               </Link>
             </ListItem>
           </List>
@@ -170,6 +175,14 @@ const NavBar = () => {
                     className={classes.navbar__list__listItem__link}
                   >
                     COMPETITIONS
+                  </Link>
+                </li>
+                <li className={classes.navbar__list__listItem}>
+                  <Link
+                    to="/workshops"
+                    className={classes.navbar__list__listItem__link}
+                  >
+                    WORKSHOPS
                   </Link>
                 </li>
               </ul>
