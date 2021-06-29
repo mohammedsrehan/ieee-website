@@ -1,11 +1,13 @@
-import { Button, Typography } from "@material-ui/core";
 import React from "react";
+import { Button, Typography } from "@material-ui/core";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
+//profile component
 import Profile from "../../components/profile/profile";
-// import backgroundImage from  "../../images/profiles/background.webp";
+//data file of members
+import { excom } from "../../data/profile";
 
 import useStyles from "./style";
 
@@ -47,26 +49,49 @@ const OurTeam = () => {
         </div>
       </section>
       <section className={classes.OurTeam__group} id="excom">
-        <Typography variant="h4" className={classes.OurTeam__title}>Executive Committee</Typography>
-        <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
-          <div className={classes.Ourteam__group__team} >
-            <Profile />
-            <Profile />
-            <Profile />
-            <Profile />
-            <Profile />
+        <Typography variant="h4" className={classes.OurTeam__title}>
+          Executive Committee
+        </Typography>
+        <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false} interval={5000}>
+          <div className={classes.Ourteam__group__team}>
+            {excom.slice(0, 5).map((person) => (
+              <Profile
+                name={person.name}
+                designation={person.designation}
+                linkedInURL={person.linkedInURL}
+                emailURL={person.emailURL}
+                image={person.image}
+              />
+            ))}
           </div>
           <div className={classes.Ourteam__group__team}>
-            <Profile />
-            <Profile />
-            <Profile />
-            <Profile />
-            <Profile />
+            {excom.slice(5, 11).map((person) => (
+              <Profile
+                name={person.name}
+                designation={person.designation}
+                linkedInURL={person.linkedInURL}
+                emailURL={person.emailURL}
+                image={person.image}
+              />
+            ))}
+          </div>
+          <div className={classes.Ourteam__group__team}>
+            {excom.slice(11, 17).map((person) => (
+              <Profile
+                name={person.name}
+                designation={person.designation}
+                linkedInURL={person.linkedInURL}
+                emailURL={person.emailURL}
+                image={person.image}
+              />
+            ))}
           </div>
         </Carousel>
       </section>
       <section className={classes.OurTeam__group} id="program">
-        <Typography variant="h4" className={classes.OurTeam__title}>Program Committee</Typography>
+        <Typography variant="h4" className={classes.OurTeam__title}>
+          Program Committee
+        </Typography>
         <div className={classes.Ourteam__group__team}>
           <Profile />
           <Profile />
@@ -77,7 +102,9 @@ const OurTeam = () => {
         </div>
       </section>
       <section className={classes.OurTeam__group} id="socialMedia">
-        <Typography variant="h4" className={classes.OurTeam__title}>Social Media Committee</Typography>
+        <Typography variant="h4" className={classes.OurTeam__title}>
+          Social Media Committee
+        </Typography>
         <div className={classes.Ourteam__group__team}>
           <Profile />
           <Profile />
@@ -86,7 +113,9 @@ const OurTeam = () => {
         </div>
       </section>
       <section className={classes.OurTeam__group} id="membership">
-        <Typography variant="h4" className={classes.OurTeam__title}>Membership Committee</Typography>
+        <Typography variant="h4" className={classes.OurTeam__title}>
+          Membership Committee
+        </Typography>
         <div className={classes.Ourteam__group__team}>
           <Profile />
           <Profile />

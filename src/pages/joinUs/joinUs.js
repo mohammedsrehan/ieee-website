@@ -40,7 +40,7 @@ const JoinUs = () => {
       </section>
       <section className={classes.JoinUs__benefits}>
         <div
-          className={`${classes.JoinUs__benefits__benefit} ${classes.JoinUs__benefits__benefit__grey}`}
+          className={classes.JoinUs__benefits__benefit}
         >
           <img
             src={network}
@@ -54,28 +54,28 @@ const JoinUs = () => {
           </Typography>
         </div>
         <div
-          className={`${classes.JoinUs__benefits__benefit} ${classes.JoinUs__benefits__benefit__blue}`}
+          className={classes.JoinUs__benefits__benefit}
         >
           <img
             src={network}
             alt="skills"
             className={classes.JoinUs__benefits__benefit__image}
           />
-          <Typography variant="h6">SOFT SKILLS</Typography>
+          <Typography variant="h6">NETWORK</Typography>
           <Typography variant="body1">
             Build your professional skills including leadership, teamwork,
             communication, and prioritization
           </Typography>
         </div>
         <div
-          className={`${classes.JoinUs__benefits__benefit} ${classes.JoinUs__benefits__benefit__grey}`}
+          className={classes.JoinUs__benefits__benefit}
         >
           <img
             src={network}
             alt="skills"
             className={classes.JoinUs__benefits__benefit__image}
           />
-          <Typography variant="h6">SOFT SKILLS</Typography>
+          <Typography variant="h6">AWARDS</Typography>
           <Typography variant="body1">
             Build your professional skills including leadership, teamwork,
             communication, and prioritization
@@ -87,7 +87,7 @@ const JoinUs = () => {
             alt="skills"
             className={classes.JoinUs__benefits__benefit__image}
           />
-          <Typography variant="h6">SOFT SKILLS</Typography>
+          <Typography variant="h6">TRAVEL GRANTS</Typography>
           <Typography variant="body1">
             Build your professional skills including leadership, teamwork,
             communication, and prioritization
@@ -99,21 +99,21 @@ const JoinUs = () => {
             alt="skills"
             className={classes.JoinUs__benefits__benefit__image}
           />
-          <Typography variant="h6">SOFT SKILLS</Typography>
+          <Typography variant="h6">SCHOLARSHIPS</Typography>
           <Typography variant="body1">
             Build your professional skills including leadership, teamwork,
             communication, and prioritization
           </Typography>
         </div>
         <div
-          className={`${classes.JoinUs__benefits__benefit} ${classes.JoinUs__benefits__benefit__grey}`}
+          className={classes.JoinUs__benefits__benefit}
         >
           <img
             src={network}
             alt="skills"
             className={classes.JoinUs__benefits__benefit__image}
           />
-          <Typography variant="h6">SOFT SKILLS</Typography>
+          <Typography variant="h6">@IEEE.org</Typography>
           <Typography variant="body1">
             Build your professional skills including leadership, teamwork,
             communication, and prioritization
@@ -125,21 +125,21 @@ const JoinUs = () => {
             alt="skills"
             className={classes.JoinUs__benefits__benefit__image}
           />
-          <Typography variant="h6">SOFT SKILLS</Typography>
+          <Typography variant="h6">MAGAZINES</Typography>
           <Typography variant="body1">
             Build your professional skills including leadership, teamwork,
             communication, and prioritization
           </Typography>
         </div>
         <div
-          className={`${classes.JoinUs__benefits__benefit} ${classes.JoinUs__benefits__benefit__grey}`}
+          className={classes.JoinUs__benefits__benefit}
         >
           <img
             src={network}
             alt="skills"
             className={classes.JoinUs__benefits__benefit__image}
           />
-          <Typography variant="h6">SOFT SKILLS</Typography>
+          <Typography variant="h6">IEEE.tv</Typography>
           <Typography variant="body1">
             Build your professional skills including leadership, teamwork,
             communication, and prioritization
@@ -192,7 +192,7 @@ const JoinUs = () => {
                   }
                 />
                 <Typography variant="subtitle1">Name of Person</Typography>
-                <Typography variant="button">desig</Typography>
+                <Typography variant="overline">desig</Typography>
               </div>
               <Typography variant="body1">
                 "Our IEEE Student Branch provides networking opportunities among
@@ -203,6 +203,64 @@ const JoinUs = () => {
                 professional environment of the corporate world and also
                 provides technical and fun activities to keep the students
                 active and engaged throughout their campus life."
+              </Typography>
+            </div>
+          </div>
+          <div className={classes.JoinUs__testemonials__carousel}>
+            <Typography variant="h4">Testemonials</Typography>
+            <div className={classes.JoinUs__testemonials__carousel__content}>
+              <div
+                className={
+                  classes.JoinUs__testemonials__carousel__content__person
+                }
+              >
+                <Avatar
+                  alt="Remy Sharp"
+                  src={image}
+                  className={
+                    classes.JoinUs__testemonials__carousel__content__person__image
+                  }
+                />
+                <Typography variant="subtitle1">Name of Person</Typography>
+                <Typography variant="overline">desig</Typography>
+              </div>
+              <Typography variant="body1">
+                "IEEE has given me the chance to improve my management skills.
+                Being exposed to multitudinous scenarios, I learned valuable
+                wisdom about effectively managing my time, developing new work
+                processes, voicing opinions while being open to feedback and
+                above all, networking with a relevant group of professionals.
+                IEEE members are uniquely positioned to provide the innovative
+                solutions needed in the technical industries going forward. In
+                addition to the human networks that can be tapped for advice or
+                assistance, there are many web resources with special access
+                just for members."
+              </Typography>
+            </div>
+          </div>
+          <div className={classes.JoinUs__testemonials__carousel}>
+            <Typography variant="h4">Testemonials</Typography>
+            <div className={classes.JoinUs__testemonials__carousel__content}>
+              <div
+                className={
+                  classes.JoinUs__testemonials__carousel__content__person
+                }
+              >
+                <Avatar
+                  alt="Remy Sharp"
+                  src={image}
+                  className={
+                    classes.JoinUs__testemonials__carousel__content__person__image
+                  }
+                />
+                <Typography variant="subtitle1">Name of Person</Typography>
+                <Typography variant="overline">desig</Typography>
+              </div>
+              <Typography variant="body1">
+                "Joining IEEE has provided me with professional exposure. It
+                also exposed me to various new opportunities and gave me a
+                chance to organize technical events, seminars, webinars and to
+                network with people all over the world."
               </Typography>
             </div>
           </div>

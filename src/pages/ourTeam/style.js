@@ -53,6 +53,7 @@ export default makeStyles((theme) => ({
     flexDirection: "row",
     color: '#fff',
     gap: "40px",
+    height: '100%',
     flexWrap: "wrap",
     padding: "50px 80px",
   },

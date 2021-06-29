@@ -32,14 +32,14 @@ export default makeStyles((theme) => ({
     display: "grid",
     // gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
     gridTemplateColumns: "repeat(4, 1fr)",
-  },
-  JoinUs__benefits__benefit__grey: {
-    backgroundColor: "#e6e9eb",
-    color: "#000",
-  },
-  JoinUs__benefits__benefit__blue: {
-    backgroundColor: "#3470a4",
-    color: "#fff",
+    "&>div:nth-child(n+1):nth-child(odd):nth-child(-n+4)": {
+      backgroundColor: "#e6e9eb",
+      color: "#000",
+    },
+    "&>div:nth-child(n+5):nth-child(even):nth-child(-n+8)": {
+      backgroundColor: "#e6e9eb",
+      color: "#000",
+    },
   },
   JoinUs__benefits__benefit: {
     display: "grid",
@@ -75,27 +75,28 @@ export default makeStyles((theme) => ({
     marginBottom: "25px",
   },
   JoinUs__testemonials__carousel: {
-    padding: '20px',
+    height: "100%",
+    padding: "20px",
     backgroundImage:
-      "radial-gradient(circle at 99% 33%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 46% 16%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 99% 25%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 57% 88%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 86%,transparent 86%, transparent 100%),radial-gradient(circle at 82% 78%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 22%,transparent 22%, transparent 100%),linear-gradient(90deg, rgb(18,103,155),rgb(18,103,155))", 
+      "radial-gradient(circle at 99% 33%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 46% 16%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 99% 25%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 57% 88%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 86%,transparent 86%, transparent 100%),radial-gradient(circle at 82% 78%, rgba(255,255,255, 0.05) 0%, rgba(255,255,255, 0.05) 22%,transparent 22%, transparent 100%),linear-gradient(90deg, rgb(18,103,155),rgb(18,103,155))",
   },
-  JoinUs__testemonials__carousel__content:{
+  JoinUs__testemonials__carousel__content: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    padding: '20px 80px',
-    gap: '30px',
+    padding: "20px 80px",
+    gap: "30px",
   },
-  JoinUs__testemonials__carousel__content__person:{
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: '0.3',
+  JoinUs__testemonials__carousel__content__person: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    flex: "0.3",
   },
-  JoinUs__testemonials__carousel__content__person__image:{
-      height: '150px',
-      width: '150px',
+  JoinUs__testemonials__carousel__content__person__image: {
+    height: "150px",
+    width: "150px",
   },
   JoinUs__accordion: {
     width: "70%",
@@ -123,6 +124,9 @@ export default makeStyles((theme) => ({
       lineHeight: "35px",
       width: "90%",
     },
+    JoinUs__testemonials: {
+      width: "80%",
+    },
   },
   [theme.breakpoints.down("sm")]: {
     JoinUs__benefits__benefit__image: {
@@ -134,10 +138,24 @@ export default makeStyles((theme) => ({
     JoinUs__benefits: {
       gridTemplateColumns: "repeat(2, 1fr)",
     },
+    JoinUs__testemonials: {
+      width: "90%",
+    },
+    JoinUs__testemonials__carousel__content: {
+      flexDirection: "column",
+      gap: "10px",
+    },
+    JoinUs__testemonials__carousel__content__person__image: {
+      height: "100px",
+      width: "100px",
+    },
   },
   [theme.breakpoints.down("xs")]: {
     JoinUs__benefits: {
       gridTemplateColumns: "repeat(1, 1fr)",
+    },
+    JoinUs__testemonials__carousel__content: {
+      padding: "20px",
     },
   },
 }));

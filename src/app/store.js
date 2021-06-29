@@ -3,6 +3,7 @@ import userReducer from '../features/userSlice'
 import eventReducer from '../features/eventSlice'
 import competitionReducer from '../features/competitionSlice'
 import workshopReducer from '../features/workshopSlice'
+import quizReducer from '../features/quizSlice'
 
 export default configureStore({
   reducer: {
@@ -10,5 +11,6 @@ export default configureStore({
     events: eventReducer,
     competitions: competitionReducer,
     workshops: workshopReducer,
+    quiz: quizReducer,
   },
 })

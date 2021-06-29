@@ -22,12 +22,6 @@ content: {
     flexDirection: 'column',
     gap: '15px',
 },
-prizes: {
-    color: '#c21430',
-},
-dateContent: {
-    lineHeight: '1.23',
-},
 title: {
     marginRight: '24px',
 }
