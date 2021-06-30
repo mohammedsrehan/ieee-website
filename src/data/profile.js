@@ -194,3 +194,91 @@ export const programCommittee = [
         image: '../images/profiles/person.jpg'
     },
 ]
+export const cs = [
+    {
+        name: 'Raghad Amr Ahmed',
+        designation: 'Chair',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 2',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 3',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 4',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 5',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 6',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+]
+export const ras = [
+    {
+        name: 'Syed Abdul Haq',
+        designation: 'Chair',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 2',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 3',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 4',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 5',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 6',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+]
