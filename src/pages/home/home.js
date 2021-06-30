@@ -25,14 +25,16 @@ function Home() {
               Nawab Shah Alam Khan College of Engineering and Technology
             </Typography>
           </div>
-          <Button
-            variant="contained"
-            color="primary"
-            size="large"
-            className={classes.button}
-          >
-            Join Us
-          </Button>
+          <Link to="/joinus" className={classes.link}>
+            <Button
+              variant="contained"
+              color="primary"
+              size="large"
+              className={classes.button}
+            >
+              Join Us
+            </Button>
+          </Link>
         </div>
       </Container>
       <section className={classes.mainSection}>
@@ -204,14 +206,16 @@ function Home() {
           Become an IEEE Member to join the first student community of Nawab
           Shah Alam Khan college of Engineering and Technology.
         </Typography>
-        <Button
-          variant="contained"
-          color="primary"
-          size="large"
-          className={classes.button}
-        >
-          Join Us
-        </Button>
+        <Link to="/joinus" className={classes.link}>
+          <Button
+            variant="contained"
+            color="primary"
+            size="large"
+            className={classes.button}
+          >
+            Join Us
+          </Button>
+        </Link>
       </Container>
     </div>
   );

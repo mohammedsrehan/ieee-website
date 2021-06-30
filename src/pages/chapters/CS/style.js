@@ -1,3 +1,4 @@
+
 import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles((theme) => ({
@@ -9,16 +10,23 @@ export default makeStyles((theme) => ({
     gap: "30px",
   },
   cs__groupPhoto: {
+    display: "flex",
+    flexDirection: "column",
     width: "100%",
-    height: "100vh",
     backgroundColor: "#1267",
-    position: "relative",
+  },
+  cs__groupPhoto__container:{
+    display: "flex",
+  },
+  cs__groupPhoto__container__image: {
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    maxHeight: "100%",
+    minWidth: "100%",
   },
   header: {
-    position: "absolute",
-    bottom: "0px",
     width: "100%",
-    background: "rgba(255,255,255,0.6)",
+    background: "rgba(255,255,255,0.8)",
   },
   header__content: {
     display: "flex",
@@ -36,6 +44,9 @@ export default makeStyles((theme) => ({
   header__text: {
     textAlign: "center",
   },
+  link:{
+    textDecoration: 'none',
+  },
   button: {
     backgroundColor: "#faa41a",
     marginTop: "20px",
@@ -46,8 +57,11 @@ export default makeStyles((theme) => ({
     width: "60%",
     color: "#faa41a",
   },
+  cs__joinus__text: {
+    marginBottom: '20px',
+  },
   Joinus__button: {
-    marginTop: "20px",
+    // marginTop: "20px",
     backgroundColor: "#000",
     borderRadius: "25px",
   },
@@ -87,8 +101,6 @@ export default makeStyles((theme) => ({
     padding: "50px",
   },
   cs__team: {
-    backgroundImage:
-      "radial-gradient(circle at 30% 97%, rgba(4, 4, 4,0.06) 0%, rgba(4, 4, 4,0.06) 33.333%,rgba(4, 4, 4,0.06) 33.333%, rgba(4, 4, 4,0.06) 66.666%,rgba(3, 3, 3,0.06) 66.666%, rgba(3, 3, 3,0.06) 99.999%),radial-gradient(circle at 22% 20%, rgba(154, 154, 154,0.06) 0%, rgba(154, 154, 154,0.06) 33.333%,rgba(78, 78, 78,0.06) 33.333%, rgba(78, 78, 78,0.06) 66.666%,rgba(1, 1, 1,0.06) 66.666%, rgba(1, 1, 1,0.06) 99.999%),radial-gradient(circle at 67% 32%, rgba(129, 129, 129,0.06) 0%, rgba(129, 129, 129,0.06) 33.333%,rgba(165, 165, 165,0.06) 33.333%, rgba(165, 165, 165,0.06) 66.666%,rgba(201, 201, 201,0.06) 66.666%, rgba(201, 201, 201,0.06) 99.999%),linear-gradient(45deg, rgb(236, 52, 23),rgb(250,164,26))",
     width: "100%",
     display: "flex",
     flexDirection: "column",
@@ -96,14 +108,18 @@ export default makeStyles((theme) => ({
     justifyContent: "center",
     padding: "30px",
   },
+  cs__team__text:{
+    color: '#faa41a',
+    borderBottom: '3px solid #faa41a',
+  },
   cs__team__members: {
     display: "flex",
     flexDirection: "row",
-    color: "#fff",
     gap: "40px",
     height: "100%",
     flexWrap: "wrap",
     padding: "50px 80px",
+    textAlign: "center",
   },
   cs__message: {
     display: "flex",
@@ -111,8 +127,7 @@ export default makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     padding: "25px",
-    backgroundImage:
-      "radial-gradient(circle at 30% 97%, rgba(4, 4, 4,0.06) 0%, rgba(4, 4, 4,0.06) 33.333%,rgba(4, 4, 4,0.06) 33.333%, rgba(4, 4, 4,0.06) 66.666%,rgba(3, 3, 3,0.06) 66.666%, rgba(3, 3, 3,0.06) 99.999%),radial-gradient(circle at 22% 20%, rgba(154, 154, 154,0.06) 0%, rgba(154, 154, 154,0.06) 33.333%,rgba(78, 78, 78,0.06) 33.333%, rgba(78, 78, 78,0.06) 66.666%,rgba(1, 1, 1,0.06) 66.666%, rgba(1, 1, 1,0.06) 99.999%),radial-gradient(circle at 67% 32%, rgba(129, 129, 129,0.06) 0%, rgba(129, 129, 129,0.06) 33.333%,rgba(165, 165, 165,0.06) 33.333%, rgba(165, 165, 165,0.06) 66.666%,rgba(201, 201, 201,0.06) 66.666%, rgba(201, 201, 201,0.06) 99.999%),linear-gradient(45deg, rgb(236, 52, 23),rgb(250,164,26))",
+    backgroundImage: 'radial-gradient(circle at center center, rgba(49, 52, 53,0.1) 0%, rgba(49, 52, 53,0.1) 3%,transparent 3%, transparent 28%,rgba(228, 25, 216,0.1) 28%, rgba(228, 25, 216,0.1) 100%),linear-gradient(22.5deg, rgb(250,164,26) 0%,rgb(250,164,26) 31%); background-size: 27px 27px',
   },
   cs__message__content: {
     display: "flex",
@@ -121,6 +136,7 @@ export default makeStyles((theme) => ({
     padding: "50px",
     gap: "50px",
     width: "80%",
+    textAlign: "center",
   },
   cs__message__content__person: {
     display: "flex",
@@ -140,6 +156,9 @@ export default makeStyles((theme) => ({
     cs__joinus: {
       width: "90%",
     },
+    cs__groupPhoto__container__image: {
+      backgroundSize: "contain",
+    },
   },
   [theme.breakpoints.down("sm")]: {
     cs__message__content: {
@@ -147,10 +166,17 @@ export default makeStyles((theme) => ({
       padding: "50px 20px",
       gap: "20px",
     },
+    header__content: {
+      flexDirection: "column",
+      gap: "20px",
+    },
+    logo__image: {
+      height: "60px",
+    },
   },
   [theme.breakpoints.down("xs")]: {
     cs__team__members: {
-        padding: "25px",
-      },
+      padding: "25px",
+    },
   },
 }));
