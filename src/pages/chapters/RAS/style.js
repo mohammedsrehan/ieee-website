@@ -2,23 +2,23 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles((theme) => ({
-  cs: {
+  ras: {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     gap: "30px",
   },
-  cs__groupPhoto: {
+  ras__groupPhoto: {
     display: "flex",
     flexDirection: "column",
     width: "100%",
     backgroundColor: "#1267",
   },
-  cs__groupPhoto__container:{
+  ras__groupPhoto__container:{
     display: "flex",
   },
-  cs__groupPhoto__container__image: {
+  ras__groupPhoto__container__image: {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     maxHeight: "100%",
@@ -51,13 +51,13 @@ export default makeStyles((theme) => ({
     backgroundColor: "#88201f",
     marginTop: "20px",
   },
-  cs__joinus: {
+  ras__joinus: {
     textAlign: "center",
     margin: "50px auto",
     width: "60%",
     color: "#88201f",
   },
-  cs__joinus__text: {
+  ras__joinus__text: {
     marginBottom: '20px',
   },
   Joinus__button: {
@@ -65,7 +65,7 @@ export default makeStyles((theme) => ({
     backgroundColor: "#000",
     borderRadius: "25px",
   },
-  cs__benefits: {
+  ras__benefits: {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -75,24 +75,24 @@ export default makeStyles((theme) => ({
     backgroundColor: "#88201f",
     width: "100%",
   },
-  cs__benefits__text: {
+  ras__benefits__text: {
     color: '#fff',
     borderBottom: "3px solid #fff",
   },
-  cs__benefits__cards: {
+  ras__benefits__cards: {
     width: "80%",
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
     gap: "25px",
   },
-  cs__benefits__cards__paper: {
+  ras__benefits__cards__paper: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     gap: "20px",
     padding: "40px",
   },
-  cs__team: {
+  ras__team: {
     width: "100%",
     display: "flex",
     flexDirection: "column",
@@ -100,11 +100,11 @@ export default makeStyles((theme) => ({
     justifyContent: "center",
     padding: "30px",
   },
-  cs__team__text:{
+  ras__team__text:{
     color: '#88201f',
     borderBottom: '3px solid #88201f',
   },
-  cs__team__members: {
+  ras__team__members: {
     display: "flex",
     flexDirection: "row",
     gap: "40px",
@@ -113,7 +113,7 @@ export default makeStyles((theme) => ({
     padding: "50px 80px",
     textAlign: "center",
   },
-  cs__message: {
+  ras__message: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -122,7 +122,7 @@ export default makeStyles((theme) => ({
     color: '#fff',
     backgroundImage: 'radial-gradient(circle at center center, rgba(49, 52, 53,0.1) 0%, rgba(49, 52, 53,0.1) 3%,transparent 3%, transparent 28%,rgba(228, 25, 216,0.1) 28%, rgba(228, 25, 216,0.1) 100%),linear-gradient(22.5deg, rgb(136,32,31) 0%,rgb(136,32,31) 31%); background-size: 27px 27px',
   },
-  cs__message__content: {
+  ras__message__content: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -131,14 +131,14 @@ export default makeStyles((theme) => ({
     width: "80%",
     textAlign: "center",
   },
-  cs__message__content__person: {
+  ras__message__content__person: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
     gap: "15px",
   },
-  cs__message__content__person__image: {
+  ras__message__content__person__image: {
     width: "120px",
     height: "120px",
   },
@@ -146,15 +146,15 @@ export default makeStyles((theme) => ({
     header__content: {
       width: "100%",
     },
-    cs__joinus: {
+    ras__joinus: {
       width: "90%",
     },
-    cs__groupPhoto__container__image: {
+    ras__groupPhoto__container__image: {
       backgroundSize: "contain",
     },
   },
   [theme.breakpoints.down("sm")]: {
-    cs__message__content: {
+    ras__message__content: {
       flexDirection: "column",
       padding: "50px 20px",
       gap: "20px",
@@ -168,7 +168,7 @@ export default makeStyles((theme) => ({
     },
   },
   [theme.breakpoints.down("xs")]: {
-    cs__team__members: {
+    ras__team__members: {
       padding: "25px",
     },
   },

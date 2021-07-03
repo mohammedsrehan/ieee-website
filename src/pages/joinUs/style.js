@@ -17,6 +17,9 @@ export default makeStyles((theme) => ({
     gap: "50px",
     textAlign: "center",
   },
+  link:{
+    textDecoration: 'none',
+  },
   JoinUs__form__text: {
     lineHeight: "45px",
     width: "50%",
@@ -47,6 +50,9 @@ export default makeStyles((theme) => ({
     placeItems: "center",
     padding: "80px 40px",
     textAlign: "center",
+  },
+  JoinUs__benefits__benefit__image: {
+    width: '120px',
   },
   JoinUs__globalBenefits: {
     color: "#000",

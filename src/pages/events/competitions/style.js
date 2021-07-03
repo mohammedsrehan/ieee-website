@@ -10,7 +10,7 @@ export default makeStyles((theme) => ({
     },
     Competitions__cards: {
         display: 'grid',
-        gridTemplateColumns: "repeat(auto-fit, minmax(350px, 0fr))",
+        gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))",
         // gridTemplateColumns: "repeat(2, 1fr)",
         width: '90%',
         gap: '30px',

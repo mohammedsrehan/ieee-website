@@ -1,11 +1,14 @@
 import React from "react";
 import { Button, Container, Paper, Typography } from "@material-ui/core";
 import useStyles from "./styles";
-import dartImage from "../../images/homePage/dart.png";
-import poster1 from "../../images/webinars/Poster.webp";
+import dartImage from "../../images/homePage/dart.webp";
+import telescopeImage from "../../images/homePage/telescope.webp";
+import poster1 from "../../images/homePage/webinar1.webp";
+import webinar from "../../images/homePage/webinar.webp";
 import csLogo from "../../images/homePage/IEEE-CS_Logo.png";
 import rasLogo from "../../images/homePage/ieee-ras-logo.png";
 import wieLogo from "../../images/homePage/ieee-wie-logo.png";
+import IEEE_SB from "../../images/homePage/IEEE_SB.webp";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -18,6 +21,7 @@ function Home() {
         className={classes.container}
         disableGutters={true}
       >
+        <img src={IEEE_SB} alt="ieee_sb" className={classes.container__image}/>
         <div className={classes.header}>
           <div className={classes.header__text}>
             <Typography variant="h4">IEEE STUDENT BRANCH</Typography>
@@ -48,12 +52,12 @@ function Home() {
               </Typography>
             </header>
             <div>
-              <img src={dartImage} alt="dart_image" className={classes.image} />
+              <img src={dartImage} alt="dart_image" title="mission" className={classes.image} />
             </div>
           </Paper>
           <Paper elevation={8} className={classes.paper}>
             <div>
-              <img src={dartImage} alt="dart_image" className={classes.image} />
+              <img src={telescopeImage} alt="telescope_image" title="vision" className={classes.image} />
             </div>
             <header className={classes.headers}>
               <Typography variant="h4">Vision</Typography>
@@ -72,8 +76,8 @@ function Home() {
         <section className={classes.events}>
           <Paper elevation={12} className={classes.events_cards}>
             <div className={classes.events_cards_image}>
-              <img src={poster1} alt="webinar_image" className={classes.img} />
-              <img src={poster1} alt="webinar_image" className={classes.img} />
+              <img src={poster1} alt="webinar_image" title="webinar" className={classes.img} />
+              <img src={webinar} alt="webinar_image" title="webinar" className={classes.img} />
             </div>
             <header className={classes.events_cards_header}>
               <Typography variant="h5" className={classes.font}>
@@ -88,8 +92,8 @@ function Home() {
           </Paper>
           <Paper elevation={12} className={classes.events_cards}>
             <div className={classes.events_cards_image}>
-              <img src={poster1} alt="webinar_image" className={classes.img} />
-              <img src={poster1} alt="webinar_image" className={classes.img} />
+              <img src={poster1} alt="webinar_image" title="competition" className={classes.img} />
+              <img src={poster1} alt="webinar_image" title="competition" className={classes.img} />
             </div>
             <header className={classes.events_cards_header}>
               <Typography variant="h5" className={classes.font}>
@@ -107,8 +111,8 @@ function Home() {
             className={`${classes.events_cards} ${classes.quizzes}`}
           >
             <div className={classes.events_cards_image}>
-              <img src={poster1} alt="webinar_image" className={classes.img} />
-              <img src={poster1} alt="webinar_image" className={classes.img} />
+              <img src={poster1} alt="webinar_image" title="quiz" className={classes.img} />
+              <img src={poster1} alt="webinar_image" title="quiz" className={classes.img} />
             </div>
             <header className={classes.events_cards_header}>
               <Typography variant="h5" className={classes.font}>
@@ -126,8 +130,8 @@ function Home() {
             className={`${classes.events_cards} ${classes.quizzes}`}
           >
             <div className={classes.events_cards_image}>
-              <img src={poster1} alt="webinar_image" className={classes.img} />
-              <img src={poster1} alt="webinar_image" className={classes.img} />
+              <img src={poster1} alt="webinar_image" title="workshop" className={classes.img} />
+              <img src={poster1} alt="webinar_image" title="workshop" className={classes.img} />
             </div>
             <header className={classes.events_cards_header}>
               <Typography variant="h5" className={classes.font}>

@@ -3,11 +3,12 @@ import React from "react";
 import useStyles from "./style";
 import { Link as RouterLink } from "react-router-dom";
 
-import mags from "../../../images/cs/mags.webp";
-import library from "../../../images/cs/library.webp";
-import price from "../../../images/cs/price.webp";
-import contacts from "../../../images/cs/contacts.webp";
-import community from "../../../images/cs/community.webp";
+import award from "../../../images/ras/award.png";
+import discount from "../../../images/ras/discount.png";
+import research from "../../../images/ras/research.png";
+import resource from "../../../images/ras/resource.png";
+import speak from "../../../images/ras/speak.png";
+import volunteer from "../../../images/ras/volunteer.png";
 import groupPhoto from "../../../images/ras/rasGroup.webp";
 
 import Profile from "../../../components/profile/profile";
@@ -18,13 +19,13 @@ import { ras } from "../../../data/profile";
 const Ras = () => {
   const classes = useStyles();
   return (
-    <div className={classes.cs}>
-      <section className={classes.cs__groupPhoto}>
-        <div className={classes.cs__groupPhoto__container}>
+    <div className={classes.ras}>
+      <section className={classes.ras__groupPhoto}>
+        <div className={classes.ras__groupPhoto__container}>
           <img
             src={groupPhoto}
             alt="grpPhoto"
-            className={classes.cs__groupPhoto__container__image}
+            className={classes.ras__groupPhoto__container__image}
           />
         </div>
         <div className={classes.header}>
@@ -58,8 +59,8 @@ const Ras = () => {
           </div>
         </div>
       </section>
-      <section className={classes.cs__joinus}>
-        <Typography variant="h4" className={classes.cs__joinus__text}>
+      <section className={classes.ras__joinus}>
+        <Typography variant="h4" className={classes.ras__joinus__text}>
           We strive to promote the fields of robotics and automation as a career
           and bring awareness and growth among the members of our society
           through curated events and activities.
@@ -75,54 +76,54 @@ const Ras = () => {
           </Button>
         </RouterLink>
       </section>
-      <section className={classes.cs__benefits}>
-        <Typography variant="h4" className={classes.cs__benefits__text}>
+      <section className={classes.ras__benefits}>
+        <Typography variant="h4" className={classes.ras__benefits__text}>
           RAS MEMBERSHIP OFFERS
         </Typography>
-        <div className={classes.cs__benefits__cards}>
-          <Paper elevation={8} className={classes.cs__benefits__cards__paper}>
-            <img src={mags} alt="mags" />
+        <div className={classes.ras__benefits__cards}>
+          <Paper elevation={8} className={classes.ras__benefits__cards__paper}>
+            <img src={speak} alt="speak" />
             <Typography variant="body1">
               Access to exclusive magazines, transactions and journals
             </Typography>
           </Paper>
-          <Paper elevation={8} className={classes.cs__benefits__cards__paper}>
-            <img src={library} alt="library" />
+          <Paper elevation={8} className={classes.ras__benefits__cards__paper}>
+            <img src={research} alt="research" />
             <Typography variant="body1">
               Get involved with 44 technical co​mittees to work on similar goals
             </Typography>
           </Paper>
-          <Paper elevation={8} className={classes.cs__benefits__cards__paper}>
-            <img src={price} alt="price" />
+          <Paper elevation={8} className={classes.ras__benefits__cards__paper}>
+            <img src={discount} alt="discount" />
             <Typography variant="body1">
               Get discounts on RAS events and publications
             </Typography>
           </Paper>
-          <Paper elevation={8} className={classes.cs__benefits__cards__paper}>
-            <img src={contacts} alt="contacts" />
+          <Paper elevation={8} className={classes.ras__benefits__cards__paper}>
+            <img src={award} alt="award" />
             <Typography variant="body1">
               Get recognized for your outstanding work and efforts{" "}
             </Typography>
           </Paper>
-          <Paper elevation={8} className={classes.cs__benefits__cards__paper}>
-            <img src={community} alt="community" />
+          <Paper elevation={8} className={classes.ras__benefits__cards__paper}>
+            <img src={resource} alt="resource" />
             <Typography variant="body1">
-              Access more than 40 technical communities.
+              Access to highly valued technical resource
             </Typography>
           </Paper>
-          <Paper elevation={8} className={classes.cs__benefits__cards__paper}>
-            <img src={library} alt="library" />
+          <Paper elevation={8} className={classes.ras__benefits__cards__paper}>
+            <img src={volunteer} alt="volunteer" />
             <Typography variant="body1">
               Participate in organising events and activities
             </Typography>
           </Paper>
         </div>
       </section>
-      <section className={classes.cs__team}>
-        <Typography variant="h4" className={classes.cs__team__text}>
+      <section className={classes.ras__team}>
+        <Typography variant="h4" className={classes.ras__team__text}>
           Meet The Team
         </Typography>
-        <div className={classes.cs__team__members}>
+        <div className={classes.ras__team__members}>
           {ras.map((person) => (
             <Profile
               key={person.name}
@@ -135,16 +136,16 @@ const Ras = () => {
           ))}
         </div>
       </section>
-      <section className={classes.cs__message}>
+      <section className={classes.ras__message}>
         <Typography variant="h4">ADVISOR MESSAGE</Typography>
-        <div className={classes.cs__message__content}>
-          <div className={classes.cs__message__content__person}>
-            <Avatar className={classes.cs__message__content__person__image} />
+        <div className={classes.ras__message__content}>
+          <div className={classes.ras__message__content__person}>
+            <Avatar className={classes.ras__message__content__person__image} />
             <Typography variant="h6">Ms Shanila Mahreen</Typography>
           </div>
           <Typography
             variant="subtitle1"
-            className={classes.cs__message__content__text}
+            className={classes.ras__message__content__text}
           >
             We are in an era where the extent of development relies on machines.
             Today, organizations with the help of robotics and automation can

@@ -6,6 +6,7 @@ import {
   AccordionSummary,
   Avatar,
   Button,
+  Link,
   Typography,
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
@@ -15,8 +16,15 @@ import { Carousel } from "react-responsive-carousel";
 import useStyles from "./style";
 
 import image from "../../images/profiles/person.jpg";
-import network from "./images/network.webp";
-import thinking from "./images/thinking.webp";
+import network from "../..//images/joinUs/network.png";
+import thinking from "../../images/joinUs/thinking.png";
+import ieeeorg from "../../images/joinUs/ieeeorg.png";
+import ieeetv from "../../images/joinUs/ieeetv.png";
+import magazine from "../../images/joinUs/magazine.png";
+import scholarship from "../../images/joinUs/scholarship.png";
+import softskills from "../../images/joinUs/softskills.png";
+import travelgrants from "../../images/joinUs/travelgrants.png";
+import awards from "../../images/joinUs/awards.png";
 
 const JoinUs = () => {
   const classes = useStyles();
@@ -30,20 +38,24 @@ const JoinUs = () => {
           professionals united by a common desire to continuously learn,
           interact, collaborate, and innovate
         </Typography>
-        <Button
-          startIcon={<ListIcon />}
-          size="large"
-          className={classes.JoinUs__form__button}
+        <Link className={classes.link}
+          href="https://docs.google.com/forms/d/e/1FAIpQLScqnICww9HQLJoFFuBDymNhvjFAn-8WL_eAbQuYNeM9MnTVVw/viewform"
+          target="_blank"
+          rel="noopener"
         >
-          Google Form Submission
-        </Button>
+          <Button
+            startIcon={<ListIcon />}
+            size="large"
+            className={classes.JoinUs__form__button}
+          >
+            Google Form Submission
+          </Button>
+        </Link>
       </section>
       <section className={classes.JoinUs__benefits}>
-        <div
-          className={classes.JoinUs__benefits__benefit}
-        >
+        <div className={classes.JoinUs__benefits__benefit}>
           <img
-            src={network}
+            src={softskills}
             alt="skills"
             className={classes.JoinUs__benefits__benefit__image}
           />
@@ -53,12 +65,10 @@ const JoinUs = () => {
             communication, and prioritization
           </Typography>
         </div>
-        <div
-          className={classes.JoinUs__benefits__benefit}
-        >
+        <div className={classes.JoinUs__benefits__benefit}>
           <img
             src={network}
-            alt="skills"
+            alt="network"
             className={classes.JoinUs__benefits__benefit__image}
           />
           <Typography variant="h6">NETWORK</Typography>
@@ -67,12 +77,10 @@ const JoinUs = () => {
             communication, and prioritization
           </Typography>
         </div>
-        <div
-          className={classes.JoinUs__benefits__benefit}
-        >
+        <div className={classes.JoinUs__benefits__benefit}>
           <img
-            src={network}
-            alt="skills"
+            src={awards}
+            alt="awards"
             className={classes.JoinUs__benefits__benefit__image}
           />
           <Typography variant="h6">AWARDS</Typography>
@@ -83,8 +91,8 @@ const JoinUs = () => {
         </div>
         <div className={classes.JoinUs__benefits__benefit}>
           <img
-            src={network}
-            alt="skills"
+            src={travelgrants}
+            alt="travel"
             className={classes.JoinUs__benefits__benefit__image}
           />
           <Typography variant="h6">TRAVEL GRANTS</Typography>
@@ -95,8 +103,8 @@ const JoinUs = () => {
         </div>
         <div className={classes.JoinUs__benefits__benefit}>
           <img
-            src={network}
-            alt="skills"
+            src={scholarship}
+            alt="scholarship"
             className={classes.JoinUs__benefits__benefit__image}
           />
           <Typography variant="h6">SCHOLARSHIPS</Typography>
@@ -105,12 +113,10 @@ const JoinUs = () => {
             communication, and prioritization
           </Typography>
         </div>
-        <div
-          className={classes.JoinUs__benefits__benefit}
-        >
+        <div className={classes.JoinUs__benefits__benefit}>
           <img
-            src={network}
-            alt="skills"
+            src={ieeeorg}
+            alt="ieeeorg"
             className={classes.JoinUs__benefits__benefit__image}
           />
           <Typography variant="h6">@IEEE.org</Typography>
@@ -121,8 +127,8 @@ const JoinUs = () => {
         </div>
         <div className={classes.JoinUs__benefits__benefit}>
           <img
-            src={network}
-            alt="skills"
+            src={magazine}
+            alt="magazine"
             className={classes.JoinUs__benefits__benefit__image}
           />
           <Typography variant="h6">MAGAZINES</Typography>
@@ -131,12 +137,10 @@ const JoinUs = () => {
             communication, and prioritization
           </Typography>
         </div>
-        <div
-          className={classes.JoinUs__benefits__benefit}
-        >
+        <div className={classes.JoinUs__benefits__benefit}>
           <img
-            src={network}
-            alt="skills"
+            src={ieeetv}
+            alt="ieeetv"
             className={classes.JoinUs__benefits__benefit__image}
           />
           <Typography variant="h6">IEEE.tv</Typography>

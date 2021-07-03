@@ -193,6 +193,150 @@ export const programCommittee = [
         emailURL: 'email url',
         image: '../images/profiles/person.jpg'
     },
+    {
+        name: 'person 10',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 10',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+]
+export const socialMediaCommittee = [
+    {
+        name: 'person 1',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 2',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 3',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 4',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 5',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 6',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 7',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 8',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 9',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 10',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+]
+export const membershipCommittee = [
+    {
+        name: 'person 1',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 2',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 3',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 4',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 5',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 6',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 7',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 8',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
 ]
 export const cs = [
     {

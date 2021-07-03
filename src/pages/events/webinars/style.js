@@ -11,12 +11,13 @@ export default makeStyles((theme) => ({
     
     cards: {
         display: 'grid',
-        gridTemplateColumns: "repeat(auto-fit, minmax(350px, 0fr))",
+        gridTemplateColumns: "repeat(auto-fit, minmax(300px, 0fr))",
         // gridTemplateColumns: "repeat(2, 1fr)",
         width: '90%',
         gap: '20px',
         // placeContent: 'center',
         margin: '50px auto',
+        justifyContent: 'space-evenly',
     },
     container: {
         display: 'flex',
