@@ -13,8 +13,6 @@ const WorkshopCard = ({
 }) => {
   const classes = useStyles();
 
-  let formattedDate = new Date(date);
-
   return (
     <div className={classes.WorkshopCard}>
       <Card className={classes.card} raised={true}>
@@ -24,7 +22,7 @@ const WorkshopCard = ({
         <CardContent className={classes.content}>
           <div className={classes.date}>
             <Typography variant="caption" className={classes.dateContent}>
-              {formattedDate.toDateString()}
+              {date}
             </Typography>
           </div>
           <div>

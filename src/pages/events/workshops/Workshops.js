@@ -14,7 +14,7 @@ import { selectUser } from "../../../features/userSlice";
 const Workshops = () => {
   const classes = useStyles();
 
-  const [workshops, loading, error] = useCollection(db.collection("workshops"));
+  const [workshops, loading, error] = useCollection(db.collection("workshops").orderBy("date", "asc"));
   const user = useSelector(selectUser);
 
   return (

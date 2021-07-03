@@ -11,9 +11,16 @@ export default makeStyles((theme) => ({
   container: {
     width: "100%",
     backgroundColor: "#00b0ff",
-    height: "100vh",
+    // height: "100vh",
     position: "relative",
     // zIndex: "-1",
+    display: 'flex',
+  },
+  container__image: {
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    maxHeight: "100%",
+    minWidth: "100%",
   },
   mainSection: {
     width: "70%",
@@ -181,6 +188,11 @@ export default makeStyles((theme) => ({
       backgroundColor: "#c21531",
       color: '#ffffff',
     }
+  },
+  [theme.breakpoints.down('md')]: {
+    container__image: {
+      backgroundSize: "contain",
+    },
   },
   [theme.breakpoints.down('sm')]: {
     button: {

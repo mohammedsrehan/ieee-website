@@ -23,10 +23,8 @@ theme = responsiveFontSizes(theme);
 const Webinars = () => {
   const classes = useStyles();
 
-  const [events, loading, error] = useCollection(db.collection('events'))
+  const [events, loading, error] = useCollection(db.collection('events').orderBy("date", "asc"))
   const user = useSelector(selectUser);
-
-
   
   return (
     <ThemeProvider theme={theme}>

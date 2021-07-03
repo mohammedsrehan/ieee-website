@@ -7,7 +7,12 @@ import { Carousel } from "react-responsive-carousel";
 //profile component
 import Profile from "../../components/profile/profile";
 //data file of members
-import { excom } from "../../data/profile";
+import {
+  excom,
+  programCommittee,
+  socialMediaCommittee,
+  membershipCommittee,
+} from "../../data/profile";
 
 import useStyles from "./style";
 
@@ -52,10 +57,16 @@ const OurTeam = () => {
         <Typography variant="h4" className={classes.OurTeam__title}>
           Executive Committee
         </Typography>
-        <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false} interval={5000}>
+        <Carousel
+          autoPlay={true}
+          infiniteLoop={true}
+          showThumbs={false}
+          interval={5000}
+        >
           <div className={classes.Ourteam__group__team}>
             {excom.slice(0, 5).map((person) => (
               <Profile
+                key={person.name}
                 name={person.name}
                 designation={person.designation}
                 linkedInURL={person.linkedInURL}
@@ -67,6 +78,7 @@ const OurTeam = () => {
           <div className={classes.Ourteam__group__team}>
             {excom.slice(5, 11).map((person) => (
               <Profile
+                key={person.name}
                 name={person.name}
                 designation={person.designation}
                 linkedInURL={person.linkedInURL}
@@ -78,6 +90,7 @@ const OurTeam = () => {
           <div className={classes.Ourteam__group__team}>
             {excom.slice(11, 17).map((person) => (
               <Profile
+                key={person.name}
                 name={person.name}
                 designation={person.designation}
                 linkedInURL={person.linkedInURL}
@@ -92,37 +105,109 @@ const OurTeam = () => {
         <Typography variant="h4" className={classes.OurTeam__title}>
           Program Committee
         </Typography>
-        <div className={classes.Ourteam__group__team}>
-          <Profile />
-          <Profile />
-          <Profile />
-          <Profile />
-          <Profile />
-          <Profile />
-        </div>
+        <Carousel
+          autoPlay={true}
+          infiniteLoop={true}
+          showThumbs={false}
+          interval={5000}
+        >
+          <div className={classes.Ourteam__group__team}>
+            {programCommittee.slice(0, 6).map((person) => (
+              <Profile
+                key={person.name}
+                name={person.name}
+                designation={person.designation}
+                linkedInURL={person.linkedInURL}
+                emailURL={person.emailURL}
+                image={person.image}
+              />
+            ))}
+          </div>
+          <div className={classes.Ourteam__group__team}>
+            {programCommittee.slice(6, 13).map((person) => (
+              <Profile
+                key={person.name}
+                name={person.name}
+                designation={person.designation}
+                linkedInURL={person.linkedInURL}
+                emailURL={person.emailURL}
+                image={person.image}
+              />
+            ))}
+          </div>
+        </Carousel>
       </section>
       <section className={classes.OurTeam__group} id="socialMedia">
         <Typography variant="h4" className={classes.OurTeam__title}>
           Social Media Committee
         </Typography>
-        <div className={classes.Ourteam__group__team}>
-          <Profile />
-          <Profile />
-          <Profile />
-          <Profile />
-        </div>
+        <Carousel
+          autoPlay={true}
+          infiniteLoop={true}
+          showThumbs={false}
+          interval={5000}
+        >
+          <div className={classes.Ourteam__group__team}>
+            {socialMediaCommittee.slice(0, 6).map((person) => (
+              <Profile
+                key={person.name}
+                name={person.name}
+                designation={person.designation}
+                linkedInURL={person.linkedInURL}
+                emailURL={person.emailURL}
+                image={person.image}
+              />
+            ))}
+          </div>
+          <div className={classes.Ourteam__group__team}>
+            {socialMediaCommittee.slice(6, 13).map((person) => (
+              <Profile
+                key={person.name}
+                name={person.name}
+                designation={person.designation}
+                linkedInURL={person.linkedInURL}
+                emailURL={person.emailURL}
+                image={person.image}
+              />
+            ))}
+          </div>
+        </Carousel>
       </section>
       <section className={classes.OurTeam__group} id="membership">
         <Typography variant="h4" className={classes.OurTeam__title}>
           Membership Committee
         </Typography>
-        <div className={classes.Ourteam__group__team}>
-          <Profile />
-          <Profile />
-          <Profile />
-          <Profile />
-          <Profile />
-        </div>
+        <Carousel
+          autoPlay={true}
+          infiniteLoop={true}
+          showThumbs={false}
+          interval={5000}
+        >
+          <div className={classes.Ourteam__group__team}>
+            {membershipCommittee.slice(0, 6).map((person) => (
+              <Profile
+                key={person.name}
+                name={person.name}
+                designation={person.designation}
+                linkedInURL={person.linkedInURL}
+                emailURL={person.emailURL}
+                image={person.image}
+              />
+            ))}
+          </div>
+          <div className={classes.Ourteam__group__team}>
+            {membershipCommittee.slice(6, 13).map((person) => (
+              <Profile
+                key={person.name}
+                name={person.name}
+                designation={person.designation}
+                linkedInURL={person.linkedInURL}
+                emailURL={person.emailURL}
+                image={person.image}
+              />
+            ))}
+          </div>
+        </Carousel>
       </section>
     </div>
   );

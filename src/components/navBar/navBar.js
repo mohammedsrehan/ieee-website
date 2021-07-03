@@ -11,7 +11,7 @@ import {
 import React, { useState } from "react";
 import MenuIcon from "@material-ui/icons/Menu";
 import { Link } from "react-router-dom";
-import logo from "../../images/homePage/logo.webp";
+import logo from "../../images/homePage/logo.png";
 import useStyles from "./style";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import { ExpandLess, ExpandMore } from "@material-ui/icons";
