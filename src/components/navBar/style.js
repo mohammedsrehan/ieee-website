@@ -10,8 +10,8 @@ export default makeStyles((theme) => ({
     backgroundColor: "#ffffff",
   },
   navbar__logo: {
-    height: "70px",
-    /* image-rendering: pixelated; */
+    // height: "70px",
+    // imageRendering: "pixelated",
   },
   navbar__list: {
     display: "flex",
