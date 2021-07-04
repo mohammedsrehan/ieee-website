@@ -25,7 +25,11 @@ import { useDispatch } from 'react-redux'
 import { login } from "./features/userSlice";
 
 
-let theme = createMuiTheme();
+let theme = createMuiTheme({
+  // typography: {
+  //   fontFamily: ["Open Sans"]
+  // }
+});
 theme = responsiveFontSizes(theme);
 
 function App() {
