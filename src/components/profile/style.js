@@ -6,6 +6,7 @@ export default makeStyles((theme) => ({
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
+        textAlign: "center",
         flex: '1 1 30%'
     },
     profile__image: {

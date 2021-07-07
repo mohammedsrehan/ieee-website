@@ -71,6 +71,9 @@ export default makeStyles((theme) => ({
     backgroundColor: '#12679b',
     height: "100vh",
   },
+  buttonR: {
+    color: '#ffffff',
+  },
   [theme.breakpoints.down("sm")]: {
     navbar: {
       height: "75px",
@@ -91,9 +94,6 @@ export default makeStyles((theme) => ({
     },
     navbar__list__listItem__link: {
       color: "#ffffff",
-    },
-    buttonR: {
-      color: '#ffffff',
     },
   },
 }));
