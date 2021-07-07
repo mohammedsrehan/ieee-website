@@ -1,6 +1,5 @@
 import {
   Collapse,
-  Divider,
   IconButton,
   List,
   ListItem,
@@ -57,7 +56,6 @@ const NavBar = () => {
             <ListItemText primary="HOME" />
           </Link>
         </ListItem>
-        <Divider />
         <ListItem button to="/aboutus">
           <Link to="/about" className={classes.text}>
             <ListItemText primary="ABOUT US" />
@@ -65,7 +63,7 @@ const NavBar = () => {
         </ListItem>
         <ListItem button onClick={handleClicks}>
           <ListItemText primary="OUR EVENTS" className={classes.text} />
-          {opens ? <ExpandLess /> : <ExpandMore />}
+          {opens ? <ExpandLess className={classes.buttonR}/> : <ExpandMore className={classes.buttonR}/>}
         </ListItem>
         <Collapse in={opens} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
@@ -93,7 +91,7 @@ const NavBar = () => {
         </Collapse>
         <ListItem button onClick={handleClick}>
           <ListItemText primary="OUR CHAPTERS" className={classes.text} />
-          {open ? <ExpandLess /> : <ExpandMore />}
+          {open ? <ExpandLess className={classes.buttonR}/> : <ExpandMore className={classes.buttonR}/>}
         </ListItem>
         <Collapse in={open} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>

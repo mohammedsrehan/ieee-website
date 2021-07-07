@@ -14,7 +14,7 @@ import groupPhoto from "../../../images/wie/wieGroup.webp";
 import Profile from "../../../components/profile/profile";
 
 import wieLogo from "../../../images/homePage/ieee-wie-logo.png";
-import { ras } from "../../../data/profile";
+import { wie } from "../../../data/profile";
 
 const Wie = () => {
   const classes = useStyles();
@@ -144,7 +144,7 @@ const Wie = () => {
           Meet The Team
         </Typography>
         <div className={classes.wie__team__members}>
-          {ras.map((person) => (
+          {wie.map((person) => (
             <Profile
               key={person.name}
               name={person.name}

@@ -127,49 +127,42 @@ export const programCommittee = [
         name: 'person 1',
         designation: 'designation',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
         image: '../images/profiles/person.jpg'
     },
     {
         name: 'person 2',
         designation: 'designation',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
         image: '../images/profiles/person.jpg'
     },
     {
         name: 'person 3',
         designation: 'designation',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
         image: '../images/profiles/person.jpg'
     },
     {
         name: 'person 4',
         designation: 'designation',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
         image: '../images/profiles/person.jpg'
     },
     {
         name: 'person 5',
         designation: 'designation',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
         image: '../images/profiles/person.jpg'
     },
     {
         name: 'person 6',
         designation: 'designation',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
         image: '../images/profiles/person.jpg'
     },
     {
         name: 'person 7',
         designation: 'designation',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
         image: '../images/profiles/person.jpg'
     },
     {
@@ -338,7 +331,7 @@ export const membershipCommittee = [
         image: '../images/profiles/person.jpg'
     },
 ]
-export const cs = [
+export const wie = [
     {
         name: 'Raghad Amr Ahmed',
         designation: 'Chair',
@@ -385,6 +378,50 @@ export const cs = [
 export const ras = [
     {
         name: 'Syed Abdul Haq',
+        designation: 'Chair',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 2',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 3',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 4',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 5',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+    {
+        name: 'person 6',
+        designation: 'designation',
+        linkedInURL: 'linkedIn url',
+        emailURL: 'email url',
+        image: '../images/profiles/person.jpg'
+    },
+]
+export const cs = [
+    {
+        name: 'Zain',
         designation: 'Chair',
         linkedInURL: 'linkedIn url',
         emailURL: 'email url',

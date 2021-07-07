@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import {
-  createMuiTheme,
+  unstable_createMuiStrictModeTheme as createMuiTheme,
   responsiveFontSizes,
   ThemeProvider,
 } from "@material-ui/core/styles";
@@ -25,11 +25,7 @@ import { useDispatch } from 'react-redux'
 import { login } from "./features/userSlice";
 
 
-let theme = createMuiTheme({
-  // typography: {
-  //   fontFamily: ["Open Sans"]
-  // }
-});
+let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
 function App() {

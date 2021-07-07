@@ -11,9 +11,7 @@ export default makeStyles((theme) => ({
   container: {
     width: "100%",
     backgroundColor: "#00b0ff",
-    // height: "100vh",
     position: "relative",
-    // zIndex: "-1",
     display: "flex",
   },
   container__image: {

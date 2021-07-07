@@ -8,18 +8,18 @@
       "type": "image/x-icon"
     },
     {
-      "src": "ieee-logo.png",
+      "src": "ieee_logo_192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "ieee-logo.png",
+      "src": "ieee_logo_512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#12679b",
   "background_color": "#ffffff"
 }
