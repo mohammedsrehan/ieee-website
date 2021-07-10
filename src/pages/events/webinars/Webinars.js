@@ -18,7 +18,7 @@ import { useCollection } from "react-firebase-hooks/firestore";
 import { db } from "../../../config/firebaseConfig";
 import { useSelector } from "react-redux";
 import { selectUser } from "../../../features/userSlice";
-import profile from "../../../images/profiles/person.jpg";
+
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
@@ -51,29 +51,28 @@ const Webinars = () => {
             <div className={classes.orators}>
               <div className={classes.orators__box}>
                 <Profile
-                  image={profile}
+                  image="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Mr._Marc_Einstien.png"
                   name="Mr Marc Einstien"
                   designation="Tele communicatiions and Digital Devices"
                 />
               </div>
               <div className={classes.orators__box}>
                 <Profile
-                  image={profile}
+                  image="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Mr.BN_Suresh.png"
                   name="Dr B N Suresh"
                   designation="Chancellor Indian Institute Space and Science Tech"
                 />
               </div>
               <div className={classes.orators__box}>
                 <Profile
-                  image={profile}
-                  name="Ms Fatima Bilgrami
-"
+                  image="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Ms_Fatima_Bilgrami.png"
+                  name="Ms Fatima Bilgrami"
                   designation="Financial Services | Professional HR Recruiter"
                 />
               </div>
               <div className={classes.orators__box}>
                 <Profile
-                  image={profile}
+                  image="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/ms.Kathy_Giori.png"
                   name="Ms Kathy Giori"
                   designation="EdTech Entrepreneur and Strategic Industry Advisor"
                 />
@@ -82,28 +81,28 @@ const Webinars = () => {
             <div className={classes.orators}>
               <div className={classes.orators__box}>
                 <Profile
-                  image={profile}
+                  image="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Mr.aravind_Voruganti.png"
                   name="Mr Aravind Voruganti"
                   designation="Vice President Blockchain Practice and Products | IDS inc"
                 />
               </div>
               <div className={classes.orators__box}>
                 <Profile
-                  image={profile}
+                  image="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Mr.Vijay_Pravin_Maharajan.png"
                   name="Mr.Vijay Pravin Maharajan"
                   designation="Data Scientist | TedX Speaker Data Analytics Expert | Seimens"
                 />
               </div>
               <div className={classes.orators__box}>
                 <Profile
-                  image={profile}
+                  image="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/ms.Maleeha_Masih.png"
                   name="Ms Maleeha Masih"
                   designation="President | AIESEC Hyderabad Human Resources Consultant | SYKES"
                 />
               </div>
               <div className={classes.orators__box}>
                 <Profile
-                  image={profile}
+                  image="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/MR.Nikeelu_Gunda.png"
                   name="Mr Nikeelu Gunda"
                   designation="Entrepreneur | Founder of Digital Connect Marketing at TWorks"
                 />
@@ -112,28 +111,28 @@ const Webinars = () => {
             <div className={classes.orators}>
               <div className={classes.orators__box}>
                 <Profile
-                  image={profile}
+                  image="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Mr.Santosh_Chaluvadi.png"
                   name="Mr.Santosh Chaluvadi"
                   designation="Founder & CEO  | Supraja Technologies"
                 />
               </div>
               <div className={classes.orators__box}>
                 <Profile
-                  image={profile}
+                  image="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Dr.Salman_Abdul_Moiz_rP5Xas2I9.png"
                   name="Dr.Salman Abdul Moiz"
                   designation="Professor(SCIS) | University of Hyderabad"
                 />
               </div>
               <div className={classes.orators__box}>
                 <Profile
-                  image={profile}
+                  image="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Mr.Viiveck_verma.png"
                   name="Mr.Viiveck Verma"
                   designation="Founder | Upsurge Global Senior Advisor"
                 />
               </div>
               <div className={classes.orators__box}>
                 <Profile
-                  image={profile}
+                  image="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Mrs.Syeda_Zainab_Fatima.png"
                   name="Mrs.Syeda Zainab Fatima"
                   designation="Founder Goal Achieverz"
                 />

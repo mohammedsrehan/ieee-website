@@ -3,14 +3,6 @@ import { Button, Container, Paper, Typography } from "@material-ui/core";
 import useStyles from "./styles";
 import dartImage from "../../images/homePage/dart.webp";
 import telescopeImage from "../../images/homePage/telescope.webp";
-import poster1 from "../../images/homePage/webinar1.webp";
-import webinar from "../../images/homePage/webinar.webp";
-import competition from "../../images/homePage/competition.webp";
-import competition1 from "../../images/homePage/competition1.webp";
-import quiz from "../../images/homePage/quiz.webp";
-import quiz1 from "../../images/homePage/quiz1.webp";
-import workshop1 from "../../images/homePage/workshop1.webp";
-import workshop2 from "../../images/homePage/workshop2.webp";
 import csLogo from "../../images/homePage/IEEE-CS_Logo.png";
 import rasLogo from "../../images/homePage/ieee-ras-logo.png";
 import wieLogo from "../../images/homePage/ieee-wie-logo.png";
@@ -123,13 +115,13 @@ function Home() {
             <Paper elevation={12} className={classes.events_cards}>
               <div className={classes.events_cards_image}>
                 <img
-                  src={poster1}
+                  src="https://ik.imagekit.io/ieeensakcet/tr:w-300/webinar1_5vNp-eFY2.jpg"
                   alt="webinar_image"
                   title="webinar"
                   className={classes.img}
                 />
                 <img
-                  src={webinar}
+                  src="https://ik.imagekit.io/ieeensakcet/tr:w-300/webinar2_fJIQSopo9f.jpg"
                   alt="webinar_image"
                   title="webinar"
                   className={classes.img}
@@ -149,13 +141,13 @@ function Home() {
             <Paper elevation={12} className={classes.events_cards}>
               <div className={classes.events_cards_image}>
                 <img
-                  src={competition}
+                  src="https://ik.imagekit.io/ieeensakcet/tr:w-300/contest_qE08g9fZe.jpeg"
                   alt="competition_image"
                   title="competition"
                   className={classes.img}
                 />
                 <img
-                  src={competition1}
+                  src="https://ik.imagekit.io/ieeensakcet/tr:w-300/competition_YJJ38JHNLt.webp"
                   alt="competition_image"
                   title="competition"
                   className={classes.img}
@@ -178,13 +170,13 @@ function Home() {
             >
               <div className={classes.events_cards_image}>
                 <img
-                  src={quiz}
+                  src="https://ik.imagekit.io/ieeensakcet/tr:w-300/quiz2_JTrlpOgug.jpg"
                   alt="quiz_image"
                   title="quiz"
                   className={classes.img}
                 />
                 <img
-                  src={quiz1}
+                  src="https://ik.imagekit.io/ieeensakcet/tr:w-300/quiz1_s8sl-97c-i.jpg"
                   alt="quiz_image"
                   title="quiz"
                   className={classes.img}
@@ -207,13 +199,13 @@ function Home() {
             >
               <div className={classes.events_cards_image}>
                 <img
-                  src={workshop1}
+                  src="https://ik.imagekit.io/ieeensakcet/tr:w-300/workshop1_rNGAqLYNa.webp"
                   alt="workshop_image"
                   title="workshop"
                   className={classes.img}
                 />
                 <img
-                  src={workshop2}
+                  src="https://ik.imagekit.io/ieeensakcet/tr:w-300/workshop2_2bm7BAior.webp"
                   alt="workshop_image"
                   title="workshop"
                   className={classes.img}

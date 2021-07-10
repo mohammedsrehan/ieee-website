@@ -9,7 +9,6 @@ import help from "../../../images/wie/help.png";
 import medal from "../../../images/wie/medal.png";
 import scholarship from "../../../images/wie/scholarship.png";
 import tag from "../../../images/wie/tag.png";
-import groupPhoto from "../../../images/wie/wieGroup.webp";
 
 import Profile from "../../../components/profile/profile";
 
@@ -23,7 +22,7 @@ const Wie = () => {
       <section className={classes.wie__groupPhoto}>
         <div className={classes.wie__groupPhoto__container}>
           <img
-            src={groupPhoto}
+            src="https://ik.imagekit.io/srehan/tr:w-1200/WIE.jpg"
             alt="grpPhoto"
             className={classes.wie__groupPhoto__container__image}
           />
