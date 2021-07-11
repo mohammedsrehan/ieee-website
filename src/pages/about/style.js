@@ -20,6 +20,7 @@ export default makeStyles((theme) => ({
     },
     About__about__text__header:{
         color: '#12679b',
+        fontSize: '1.8rem',
     },
     About__about__image:{
         minWidth: '50%',
@@ -115,6 +116,9 @@ export default makeStyles((theme) => ({
         About__ourCommunity__text:{
             padding: '15px',
             margin: '10px 10px'
+        },
+        About__about__text__header:{
+            fontSize: '1.5rem',
         },
     },
 }));

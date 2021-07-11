@@ -10,7 +10,6 @@ import {
 import React, { useState } from "react";
 import MenuIcon from "@material-ui/icons/Menu";
 import { Link } from "react-router-dom";
-import logo from "../../images/homePage/logo.png";
 import useStyles from "./style";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import { ExpandLess, ExpandMore } from "@material-ui/icons";
@@ -47,10 +46,7 @@ const NavBar = () => {
       >
         <ChevronRightIcon />
       </IconButton>
-      <List
-        component="nav"
-        aria-labelledby="nested-list-subheader"
-      >
+      <List component="nav" aria-labelledby="nested-list-subheader">
         <ListItem button>
           <Link to="/" className={classes.text}>
             <ListItemText primary="HOME" />
@@ -63,7 +59,11 @@ const NavBar = () => {
         </ListItem>
         <ListItem button onClick={handleClicks}>
           <ListItemText primary="OUR EVENTS" className={classes.text} />
-          {opens ? <ExpandLess className={classes.buttonR}/> : <ExpandMore className={classes.buttonR}/>}
+          {opens ? (
+            <ExpandLess className={classes.buttonR} />
+          ) : (
+            <ExpandMore className={classes.buttonR} />
+          )}
         </ListItem>
         <Collapse in={opens} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
@@ -91,7 +91,11 @@ const NavBar = () => {
         </Collapse>
         <ListItem button onClick={handleClick}>
           <ListItemText primary="OUR CHAPTERS" className={classes.text} />
-          {open ? <ExpandLess className={classes.buttonR}/> : <ExpandMore className={classes.buttonR}/>}
+          {open ? (
+            <ExpandLess className={classes.buttonR} />
+          ) : (
+            <ExpandMore className={classes.buttonR} />
+          )}
         </ListItem>
         <Collapse in={open} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
@@ -128,10 +132,13 @@ const NavBar = () => {
 
   return (
     <div>
-
       <nav className={classes.navbar}>
         <Link to="/">
-          <img src={logo} className={classes.navbar__logo} alt="logo" />
+          <div
+            // src="https://ik.imagekit.io/ieeensakcet/tr:h-70/ieee_bDdem9m3j.png"
+            className={classes.navbar__logo}
+            // alt="logo"
+          />
         </Link>
         <ul className={classes.navbar__list}>
           <li className={classes.navbar__list__listItem}>
@@ -145,7 +152,12 @@ const NavBar = () => {
             </Link>
           </li>
           <li className={`${classes.navbar__list__listItem} ${classes.hover}`}>
-            <Link to='/#events' className={classes.navbar__list__listItem__link}>EVENTS</Link>
+            <Link
+              to="/#events"
+              className={classes.navbar__list__listItem__link}
+            >
+              EVENTS
+            </Link>
             <Paper
               elevation={3}
               className={`${classes.subListItem} subListItem`}
@@ -187,7 +199,7 @@ const NavBar = () => {
             </Paper>
           </li>
           <li className={`${classes.navbar__list__listItem} ${classes.hover}`}>
-            <Link to='/cs' className={classes.navbar__list__listItem__link}>
+            <Link to="/cs" className={classes.navbar__list__listItem__link}>
               OUR CHAPTERS
             </Link>
             <Paper
@@ -256,7 +268,6 @@ const NavBar = () => {
           <MenuIcon />
         </IconButton>
       </nav>
-
     </div>
   );
 };

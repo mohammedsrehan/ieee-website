@@ -10,8 +10,10 @@ export default makeStyles((theme) => ({
     backgroundColor: "#ffffff",
   },
   navbar__logo: {
-    // height: "70px",
-    // imageRendering: "pixelated",
+    backgroundImage:
+      'url("https://ik.imagekit.io/ieeensakcet/tr:h-70/ieee_bDdem9m3j.png")',
+    height: "70px",
+    width: "222px",
   },
   navbar__list: {
     display: "flex",
@@ -48,7 +50,7 @@ export default makeStyles((theme) => ({
     top: "30px",
     left: "50%",
     transform: "translateX(-50%)",
-    zIndex: '10',
+    zIndex: "10",
   },
   hover: {
     position: "relative",
@@ -67,12 +69,12 @@ export default makeStyles((theme) => ({
     color: "#ffffff",
   },
   mobile: {
-    width: '250px',
-    backgroundColor: '#12679b',
+    width: "250px",
+    backgroundColor: "#12679b",
     height: "100vh",
   },
   buttonR: {
-    color: '#ffffff',
+    color: "#ffffff",
   },
   [theme.breakpoints.down("sm")]: {
     navbar: {
@@ -81,7 +83,10 @@ export default makeStyles((theme) => ({
       position: "relative",
     },
     navbar__logo: {
+      backgroundImage:
+        'url("https://ik.imagekit.io/ieeensakcet/tr:h-50/ieee_bDdem9m3j.png")',
       height: "50px",
+      width: "159px",
     },
     button: {
       display: "inline-block",

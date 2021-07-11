@@ -8,7 +8,6 @@ import library from "../../../images/cs/library.webp";
 import price from "../../../images/cs/price.webp";
 import contacts from "../../../images/cs/contacts.webp";
 import community from "../../../images/cs/community.webp";
-import groupPhoto from "../../../images/cs/groupPhoto.webp";
 
 import Profile from "../../../components/profile/profile";
 
@@ -22,7 +21,7 @@ const Cs = () => {
       <section className={classes.cs__groupPhoto}>
         <div className={classes.cs__groupPhoto__container}>
           <img
-            src={groupPhoto}
+            src="https://ik.imagekit.io/ieeensakcet/tr:w-1200/csGroup"
             alt="grpPhoto"
             className={classes.cs__groupPhoto__container__image}
           />
@@ -153,7 +152,7 @@ const Cs = () => {
         <Typography variant="h4">ADVISOR MESSAGE</Typography>
         <div className={classes.cs__message__content}>
           <div className={classes.cs__message__content__person}>
-            <Avatar className={classes.cs__message__content__person__image} />
+            <Avatar className={classes.cs__message__content__person__image} src="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/asma_mam_tbqioU5dh.png"/>
             <Typography variant="h6">Ms Asma Mehdia</Typography>
           </div>
           <Typography
