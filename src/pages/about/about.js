@@ -15,15 +15,12 @@ import {
   TimelineDot,
 } from "@material-ui/lab";
 
-import college from "./images/college.webp";
-import pyramid from "./images/pyramid.svg";
-import seminar from "./images/seminar.png";
-import hackathon from "./images/hackathon.png";
-import competition from "./images/competition.png";
-import network from "./images/network.png";
-import webinar from "./images/webinar.png";
-import workshops from "./images/workshop.png";
-import work from "./images/work.png";
+import seminar from "../../images/aboutus/seminar.png";
+import hackathon from "../../images/aboutus/hackathon.png";
+import competition from "../../images/aboutus/competition.png";
+import network from "../../images/aboutus/network.png";
+import webinar from "../../images/aboutus/webinar.png";
+import workshops from "../../images/aboutus/workshop.png";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 import useStyles from "./style";
@@ -35,26 +32,31 @@ function About() {
     <div className={classes.About}>
       <Paper elevation={10} className={classes.About__about}>
         <img
-          src={college}
+          src="https://ik.imagekit.io/ieeensakcet/tr:w-400/college_BKdkFH2fF.webp"
           alt="college"
           className={classes.About__about__image}
         />
         <div className={classes.About__about__text}>
-          <Typography
-            variant="h4"
-            className={classes.About__about__text__header}
-          >
-            IEEE Student Branch of Nawab Shah Alam Khan College of Engineering
-            and Technology
-          </Typography>
           <Typography variant="h6">
+            <span className={classes.About__about__text__header}>
+              IEEE Student Branch of Nawab Shah Alam Khan College of Engineering
+              and Technology
+            </span>{" "}
+            is a student community that strives to inform, learn, entertain, and
+            inspire action through the events and experiences we create. We
+            promote student empowerment, develop professional skills, and foster
+            technological innovations and build networks. ​ Our community
+            consists of amateurs to experts, who understand the potential of
+            volunteering and how priceless volunteers are!
+          </Typography>
+          {/* <Typography variant="h6">
             It is a student community that strives to inform, learn, entertain,
             and inspire action through the events and experiences we create. We
             promote student empowerment, develop professional skills, and foster
             technological innovations and build networks. ​ Our community
             consists of amateurs to experts, who understand the potential of
             volunteering and how priceless volunteers are!
-          </Typography>
+          </Typography> */}
         </div>
       </Paper>
       <Paper elevation={12} className={classes.About__ourCommunity}>
@@ -65,8 +67,9 @@ function About() {
           OUR COMMUNITY
         </Typography>
         <img
-          src={pyramid}
+          src="https://ik.imagekit.io/ieeensakcet/pyramid_gEz6JFkMv.svg"
           alt="pyramid"
+          loading="lazy"
           className={classes.About__ourCommunity__pyramid}
         />
         <div className={classes.About__ourCommunity__text}>
@@ -83,7 +86,9 @@ function About() {
         </div>
       </Paper>
       <section className={classes.About__WhatWeDo}>
-        <Typography variant="h4" className={classes.About__WhatWeDo__header}>WHAT WE DO</Typography>
+        <Typography variant="h4" className={classes.About__WhatWeDo__header}>
+          WHAT WE DO
+        </Typography>
         <Timeline align="left" className={classes.About__WhatWeDo__timeline}>
           <TimelineItem>
             <TimelineSeparator>
@@ -104,7 +109,7 @@ function About() {
             </TimelineSeparator>
             <TimelineContent>
               <Paper elevation={8} className={classes.About__WhatWeDo__paper}>
-                <img src={webinar} alt="webinars" />
+                <img src={webinar} alt="webinars" loading="lazy" />
                 <Typography>Webinars</Typography>
               </Paper>
             </TimelineContent>
@@ -116,7 +121,7 @@ function About() {
             </TimelineSeparator>
             <TimelineContent>
               <Paper elevation={8} className={classes.About__WhatWeDo__paper}>
-                <img src={workshops} alt="workshops" />
+                <img src={workshops} alt="workshops" loading="lazy" />
                 <Typography>Workshops</Typography>
               </Paper>
             </TimelineContent>
@@ -128,7 +133,7 @@ function About() {
             </TimelineSeparator>
             <TimelineContent>
               <Paper elevation={8} className={classes.About__WhatWeDo__paper}>
-                <img src={competition} alt="competition" />
+                <img src={competition} alt="competition" loading="lazy" />
                 <Typography>Competitions</Typography>
               </Paper>
             </TimelineContent>
@@ -140,7 +145,7 @@ function About() {
             </TimelineSeparator>
             <TimelineContent>
               <Paper elevation={8} className={classes.About__WhatWeDo__paper}>
-                <img src={hackathon} alt="hackathon" />
+                <img src={hackathon} alt="hackathon" loading="lazy" />
                 <Typography>Hackathons</Typography>
               </Paper>
             </TimelineContent>
@@ -151,7 +156,7 @@ function About() {
             </TimelineSeparator>
             <TimelineContent>
               <Paper elevation={8} className={classes.About__WhatWeDo__paper}>
-                <img src={network} alt="network" />
+                <img src={network} alt="network" loading="lazy" />
                 <Typography>Help Build Network</Typography>
               </Paper>
             </TimelineContent>
@@ -162,7 +167,12 @@ function About() {
         <Typography variant="h4" className={classes.About__Work__header}>
           HOW WE WORK
         </Typography>
-        <img src={work} alt="work" className={classes.About__Work__image}/>
+        <img
+          src="https://ik.imagekit.io/ieeensakcet/tr:w-800/work_RmD9D29gs7.png"
+          alt="work"
+          loading="lazy"
+          className={classes.About__Work__image}
+        />
         <div>
           <Accordion className={classes.About__accordion}>
             <AccordionSummary

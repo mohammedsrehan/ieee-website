@@ -9,7 +9,6 @@ import research from "../../../images/ras/research.png";
 import resource from "../../../images/ras/resource.png";
 import speak from "../../../images/ras/speak.png";
 import volunteer from "../../../images/ras/volunteer.png";
-import groupPhoto from "../../../images/ras/rasGroup.webp";
 
 import Profile from "../../../components/profile/profile";
 
@@ -23,7 +22,7 @@ const Ras = () => {
       <section className={classes.ras__groupPhoto}>
         <div className={classes.ras__groupPhoto__container}>
           <img
-            src={groupPhoto}
+            src="https://ik.imagekit.io/ieeensakcet/tr:w-1200/rasGroup_JtDGVXZhx"
             alt="grpPhoto"
             className={classes.ras__groupPhoto__container__image}
           />
@@ -140,7 +139,7 @@ const Ras = () => {
         <Typography variant="h4">ADVISOR MESSAGE</Typography>
         <div className={classes.ras__message__content}>
           <div className={classes.ras__message__content__person}>
-            <Avatar className={classes.ras__message__content__person__image} />
+            <Avatar className={classes.ras__message__content__person__image} src='https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/shanila_mam.jpeg'/>
             <Typography variant="h6">Ms Shanila Mahreen</Typography>
           </div>
           <Typography

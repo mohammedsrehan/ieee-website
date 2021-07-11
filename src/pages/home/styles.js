@@ -13,6 +13,7 @@ export default makeStyles((theme) => ({
     backgroundColor: "#00b0ff",
     position: "relative",
     display: "flex",
+    flexDirection: "column",
   },
   container__image: {
     backgroundSize: "cover",
@@ -226,6 +227,7 @@ export default makeStyles((theme) => ({
     },
     header: {
       padding: "5%",
+      position: 'static',
     },
     mainSection: {
       width: "90%",
@@ -247,6 +249,16 @@ export default makeStyles((theme) => ({
     },
     events_cards: {
       width: "100%",
+    },
+    header:{
+      flexDirection: 'column',
+      textAlign: "center",
+      gap: '10px',
+    },
+    header__text: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '10px',
     },
   },
 }));

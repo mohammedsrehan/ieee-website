@@ -15,7 +15,6 @@ import { Carousel } from "react-responsive-carousel";
 
 import useStyles from "./style";
 
-import image from "../../images/profiles/person.jpg";
 import network from "../..//images/joinUs/network.png";
 import thinking from "../../images/joinUs/thinking.png";
 import ieeeorg from "../../images/joinUs/ieeeorg.png";
@@ -190,7 +189,7 @@ const JoinUs = () => {
               >
                 <Avatar
                   alt="Remy Sharp"
-                  src={image}
+                  src=""
                   className={
                     classes.JoinUs__testemonials__carousel__content__person__image
                   }
@@ -220,7 +219,7 @@ const JoinUs = () => {
               >
                 <Avatar
                   alt="Remy Sharp"
-                  src={image}
+                  src=""
                   className={
                     classes.JoinUs__testemonials__carousel__content__person__image
                   }
@@ -252,7 +251,7 @@ const JoinUs = () => {
               >
                 <Avatar
                   alt="Remy Sharp"
-                  src={image}
+                  src=""
                   className={
                     classes.JoinUs__testemonials__carousel__content__person__image
                   }

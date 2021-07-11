@@ -9,7 +9,6 @@ import help from "../../../images/wie/help.png";
 import medal from "../../../images/wie/medal.png";
 import scholarship from "../../../images/wie/scholarship.png";
 import tag from "../../../images/wie/tag.png";
-import groupPhoto from "../../../images/wie/wieGroup.webp";
 
 import Profile from "../../../components/profile/profile";
 
@@ -23,7 +22,7 @@ const Wie = () => {
       <section className={classes.wie__groupPhoto}>
         <div className={classes.wie__groupPhoto__container}>
           <img
-            src={groupPhoto}
+            src="https://ik.imagekit.io/ieeensakcet/tr:w-1200/WIE_copy_gtxHcaImz.JPG"
             alt="grpPhoto"
             className={classes.wie__groupPhoto__container__image}
           />
@@ -73,7 +72,7 @@ const Wie = () => {
       </section>
       <section className={classes.wie__benefits}>
         <Typography variant="h4" className={classes.wie__benefits__text}>
-          RAS MEMBERSHIP OFFERS
+          WIE MEMBERSHIP OFFERS
         </Typography>
         <div className={classes.wie__benefits__cards}>
           <Paper elevation={8} className={classes.wie__benefits__cards__paper}>
@@ -122,7 +121,7 @@ const Wie = () => {
       </section>
       <section className={classes.wie__website}>
         <Typography variant="h5">
-          To visit IEEE Hyderabad section CS Chapter website
+          To visit IEEE Hyderabad section WIE Chapter website
         </Typography>
         <Link className={classes.link}
           href="https://ieeehyderabad.org/chapters-ag/women-in-engineering-wie"
@@ -160,7 +159,7 @@ const Wie = () => {
         <Typography variant="h4">ADVISOR MESSAGE</Typography>
         <div className={classes.wie__message__content}>
           <div className={classes.wie__message__content__person}>
-            <Avatar className={classes.wie__message__content__person__image} />
+            <Avatar className={classes.wie__message__content__person__image} src="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/rehana_mam.png"/>
             <Typography variant="h6">Ms Firdous Rehana</Typography>
           </div>
           <Typography
