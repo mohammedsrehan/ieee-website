@@ -72,8 +72,7 @@ const JoinUs = () => {
           />
           <Typography variant="h6">NETWORK</Typography>
           <Typography variant="body1">
-            Build your professional skills including leadership, teamwork,
-            communication, and prioritization
+            Make friends and network with an unparalled, global community of professionals
           </Typography>
         </div>
         <div className={classes.JoinUs__benefits__benefit}>
@@ -84,8 +83,7 @@ const JoinUs = () => {
           />
           <Typography variant="h6">AWARDS</Typography>
           <Typography variant="body1">
-            Build your professional skills including leadership, teamwork,
-            communication, and prioritization
+            Submit projects or papers for consideration and have the opportunity to win awards and funding while gaining peer recognition for your efforts
           </Typography>
         </div>
         <div className={classes.JoinUs__benefits__benefit}>
@@ -96,8 +94,7 @@ const JoinUs = () => {
           />
           <Typography variant="h6">TRAVEL GRANTS</Typography>
           <Typography variant="body1">
-            Build your professional skills including leadership, teamwork,
-            communication, and prioritization
+            These grants were created to help you focus on your goals of advancing your potential in areas not local to you
           </Typography>
         </div>
         <div className={classes.JoinUs__benefits__benefit}>
@@ -108,8 +105,7 @@ const JoinUs = () => {
           />
           <Typography variant="h6">SCHOLARSHIPS</Typography>
           <Typography variant="body1">
-            Build your professional skills including leadership, teamwork,
-            communication, and prioritization
+            Funds to help students pay for an undergraduate or post-graduate degree
           </Typography>
         </div>
         <div className={classes.JoinUs__benefits__benefit}>
@@ -120,8 +116,7 @@ const JoinUs = () => {
           />
           <Typography variant="h6">@IEEE.org</Typography>
           <Typography variant="body1">
-            Build your professional skills including leadership, teamwork,
-            communication, and prioritization
+            Get a premium Google Suite account for free. A professional email address to make you stand out
           </Typography>
         </div>
         <div className={classes.JoinUs__benefits__benefit}>
@@ -132,8 +127,7 @@ const JoinUs = () => {
           />
           <Typography variant="h6">MAGAZINES</Typography>
           <Typography variant="body1">
-            Build your professional skills including leadership, teamwork,
-            communication, and prioritization
+            Collection of premium magazines, journals and access to some latest research papers
           </Typography>
         </div>
         <div className={classes.JoinUs__benefits__benefit}>
@@ -144,8 +138,7 @@ const JoinUs = () => {
           />
           <Typography variant="h6">IEEE.tv</Typography>
           <Typography variant="body1">
-            Build your professional skills including leadership, teamwork,
-            communication, and prioritization
+            An exclusive video portal for IEEE members around the globe
           </Typography>
         </div>
       </section>
@@ -189,13 +182,13 @@ const JoinUs = () => {
               >
                 <Avatar
                   alt="Remy Sharp"
-                  src=""
+                  src="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/hafsa_EFuQsDexX.jpeg"
                   className={
                     classes.JoinUs__testemonials__carousel__content__person__image
                   }
                 />
-                <Typography variant="subtitle1">Name of Person</Typography>
-                <Typography variant="overline">desig</Typography>
+                <Typography variant="subtitle1">Hafsa Taruj</Typography>
+                <Typography variant="overline">Design Team Volunteer</Typography>
               </div>
               <Typography variant="body1">
                 "Our IEEE Student Branch provides networking opportunities among
@@ -219,13 +212,13 @@ const JoinUs = () => {
               >
                 <Avatar
                   alt="Remy Sharp"
-                  src=""
+                  src="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/kaunain.jpg"
                   className={
                     classes.JoinUs__testemonials__carousel__content__person__image
                   }
                 />
-                <Typography variant="subtitle1">Name of Person</Typography>
-                <Typography variant="overline">desig</Typography>
+                <Typography variant="subtitle1">Syeda Kaunain Fatima</Typography>
+                <Typography variant="overline">Ex SB Chair</Typography>
               </div>
               <Typography variant="body1">
                 "IEEE has given me the chance to improve my management skills.
@@ -251,13 +244,13 @@ const JoinUs = () => {
               >
                 <Avatar
                   alt="Remy Sharp"
-                  src=""
+                  src="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/kounain.JPG"
                   className={
                     classes.JoinUs__testemonials__carousel__content__person__image
                   }
                 />
-                <Typography variant="subtitle1">Name of Person</Typography>
-                <Typography variant="overline">desig</Typography>
+                <Typography variant="subtitle1">Syeda Kounain Fatima</Typography>
+                <Typography variant="overline">Secretary</Typography>
               </div>
               <Typography variant="body1">
                 "Joining IEEE has provided me with professional exposure. It
