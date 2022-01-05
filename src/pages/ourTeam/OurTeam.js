@@ -209,30 +209,30 @@ const OurTeam = () => {
           </div>
         </Carousel>
       </section>
-      <section className={classes.OurTeam__group} id="alumni">
-        <Typography variant="h4" className={classes.OurTeam__title}>
-          ALUMNI MEMBERS
-        </Typography>
-        <Carousel
-          autoPlay={true}
-          infiniteLoop={true}
-          showThumbs={false}
-          interval={5000}
-        >
-          <div className={classes.Ourteam__group__team}>
-            {membershipCommittee.slice(0, 6).map((person) => (
-              <Profile
-                key={person.name}
-                name={person.name}
-                designation={person.designation}
-                linkedInURL={person.linkedInURL}
-                emailURL={person.emailURL}
-                image={person.image}
-              />
-            ))}
-          </div>
-        </Carousel>
-      </section>
+      //<section className={classes.OurTeam__group} id="alumni">
+        //<Typography variant="h4" className={classes.OurTeam__title}>
+          //ALUMNI MEMBERS
+        //</Typography>
+        //<Carousel
+         // autoPlay={true}
+          //infiniteLoop={true}
+          //showThumbs={false}
+          //interval={5000}
+        //>
+          //<div className={classes.Ourteam__group__team}>
+           // {membershipCommittee.slice(0, 6).map((person) => (
+             // <Profile
+               // key={person.name}
+               // name={person.name}
+               // designation={person.designation}
+                //linkedInURL={person.linkedInURL}
+                //emailURL={person.emailURL}
+                //image={person.image}
+              ///>
+            //))}
+          //</div>
+        //</Carousel>
+      //</section>
     </div>
   );
 };
