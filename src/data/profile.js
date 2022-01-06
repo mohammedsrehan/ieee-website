@@ -1,17 +1,10 @@
 export const excom = [
     {
         name: 'Dr. MOHAMMED SANAULLAH QASEEM',
-        designation: 'COUNSELOR',
+        designation: 'SB COUNSELOR',
         linkedInURL: 'https://www.linkedin.com/in/dr-mohammad-sanaullah-qaseem-724a2914/',
         emailURL: 'mailto:ms_qaseem@ieee.org',
         image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/qaseem_sir.jpeg",
-    },
-    {
-        name: 'Ms. SHANILA MAHREEN',
-        designation: 'RAS ADVISOR',
-        linkedInURL: 'https://www.linkedin.com/in/shanila-mahreen-3617635b',
-        emailURL: 'mailto:shanilamahreen88@ieee.org',
-        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/shanila_mam.jpeg",
     },
     {
         name: 'Mr. MOHAMMED KHALEEL AHMED',
@@ -20,6 +13,14 @@ export const excom = [
         emailURL: 'mailto:ahmedkhaleelmohammed@gmail.com',
         image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Khaleel_sir.jpg",
     },
+    {
+        name: 'Ms. SHANILA MAHREEN',
+        designation: 'RAS ADVISOR',
+        linkedInURL: 'https://www.linkedin.com/in/shanila-mahreen-3617635b',
+        emailURL: 'mailto:shanilamahreen88@ieee.org',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/shanila_mam.jpeg",
+    },
+    
     {
         name: 'Ms. ASMA MEHDIA',
         designation: 'CS ADVISOR',
@@ -71,13 +72,13 @@ export const excom = [
     },
     {
         name: 'OMAR HABEEB',
-        designation: 'GRAPHIC DESIGNER',
+        designation: 'CHIEF GRAPHIC DESIGNER',
         linkedInURL: 'http://linkedin.com/in/omarhabeeb',
         emailURL: 'mailto:omarhabeeb@ieee.org',
         image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/omar_JR5hZBmqau.webp",
     },
     {
-        name: 'HAFSA TARUJ',
+        name: 'HAFSAH TARUJ',
         designation: 'SMC-MENTOR',
         linkedInURL: 'https://www.linkedin.com/mwlite/in/hafsa-taruj-5271231b0',
         emailURL: 'mailto:hafsataruj@ieee.org',
@@ -96,6 +97,13 @@ export const excom = [
         linkedInURL: 'https://www.linkedin.com/in/umaima-ejaz-6aa0771b0',
         emailURL: 'mailto:umaimaEjaz@ieee.org',
         image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/umaima.jpg",
+    },
+    {
+        name:'HUDA KHAN',
+        designation:'PUBLIC RELATIONS',
+        linkedInURL:'https://www.linkedin.com/in/mirza-anawin-42a3231a8/',
+        emailURL:'mailto:hudakhan@ieee.org',
+        image:"https://ik.imagekit.io/ieeensakcet/profiles/Huda.JPG",  
     },
 ];
 
@@ -523,5 +531,26 @@ export const cs = [
         designation:'Member',
         linkedInURL:'linkedIn url',
         image:'../images/profiles/tr:w-150/person.jpg',
+    },
+    {
+        name:'MOHAMMED BILAL',
+        designation:'Member',
+        linkedInURL:'linkedIn url',
+        emailURL:'mailto:Mohammed.bilal@ieee.org',
+        image:"https://ik.imagekit.io/ieeensakcet/profiles/bilal.JPG",
+    },
+    {
+        name:'SYED OBAID ULLAH',
+        designation:'Member',
+        linkedInURL:'linkedIn url',
+        emailURL:'email url',
+        image:"https://ik.imagekit.io/ieeensakcet/profiles/obaid.jpeg",
+    },
+    {
+        name:'NABEEL NAQVI',
+        designation:'Member',
+        linkedInURL:'linkedIn url',
+        emailURL:'email url',
+        image:'../images/profiles/person.jpg',
     },
 ]
