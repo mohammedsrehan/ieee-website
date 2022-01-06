@@ -184,7 +184,7 @@ const OurTeam = () => {
           interval={5000}
         >
           <div className={classes.Ourteam__group__team}>
-            {membershipCommittee.slice(0, 6).map((person) => (
+            {membershipCommittee.slice(0, 4).map((person) => (
               <Profile
                 key={person.name}
                 name={person.name}
@@ -196,7 +196,19 @@ const OurTeam = () => {
             ))}
           </div>
           <div className={classes.Ourteam__group__team}>
-            {membershipCommittee.slice(6, 13).map((person) => (
+            {membershipCommittee.slice(4, 8).map((person) => (
+              <Profile
+                key={person.name}
+                name={person.name}
+                designation={person.designation}
+                linkedInURL={person.linkedInURL}
+                emailURL={person.emailURL}
+                image={person.image}
+              />
+            ))}
+          </div>
+          <div className={classes.Ourteam__group__team}>
+            {membershipCommittee.slice(8, 12).map((person) => (
               <Profile
                 key={person.name}
                 name={person.name}
