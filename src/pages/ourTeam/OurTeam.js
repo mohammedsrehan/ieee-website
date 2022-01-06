@@ -209,8 +209,8 @@ const OurTeam = () => {
           </div>
         </Carousel>
       </section>
-/*
-      <section className={classes.OurTeam__group} id="alumni">
+
+      {/* <section className={classes.OurTeam__group} id="alumni">
         <Typography variant="h4" className={classes.OurTeam__title}>
           ALUMNI MEMBERS
         </Typography>
@@ -233,8 +233,7 @@ const OurTeam = () => {
             ))}
           </div>
         </Carousel>
-      </section>
-      */
+      </section> */}
     </div>
   );
 };
