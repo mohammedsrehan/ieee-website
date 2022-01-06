@@ -124,6 +124,7 @@ function CreateCompetition() {
             <label htmlFor="image">image</label>
             <input
               type="file"
+              accept=".png, .jpeg, .webp, .svg"
               className="input image"
               id="image"
               onChange={handleImage}
