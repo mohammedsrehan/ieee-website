@@ -101,342 +101,427 @@ export const excom = [
 
 export const programCommittee = [
     {
-        name: 'person 1',
-        designation: 'designation',
-        linkedInURL: 'linkedIn url',
-        image: '../images/profiles/person.jpg'
+        name: 'UMAIMA EJAZ',
+        designation: 'Member',
+        linkedInURL: 'https://www.linkedin.com/in/umaima-ejaz-6aa0771b0',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/umaima.jpg",
     },
     {
-        name: 'person 2',
-        designation: 'designation',
+        name: 'RAGHAD AMR AHMED',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/raghad.jpg",
     },
     {
-        name: 'person 3',
-        designation: 'designation',
+        name: 'SYEDA KOUNAIN FATIMA',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/kounain.JPG",
     },
     {
-        name: 'person 4',
-        designation: 'designation',
+        name: 'SYED MOHAMMED ZAIN',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/zain.JPG",
     },
     {
-        name: 'person 5',
-        designation: 'designation',
+        name: 'SAYEED AHMED KHAN',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Sayeed.JPG",
     },
     {
-        name: 'person 6',
-        designation: 'designation',
+        name: 'ZEESHAN KHAN',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/zeeshan.JPG",
     },
     {
-        name: 'person 7',
-        designation: 'designation',
+        name: 'SYED ABDUL HAQ',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/haq.JPG",
     },
     {
-        name: 'person 8',
-        designation: 'designation',
+        name: 'SYED MOHAMMED ALI',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/ali.JPG",
     },
     {
-        name: 'person 9',
-        designation: 'designation',
+        name: 'SHOAIB MOHAMMED HABEEB',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/shoaib.jpg",
     },
     {
-        name: 'person 10',
-        designation: 'designation',
+        name: 'SYED AMEENULLAH HUSSAINI',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/AmeenUllah_L5j7VfIlV.webp",
     },
     {
-        name: 'person 10',
-        designation: 'designation',
+        name: 'ABDUL QUDDOS KHAN',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/quddous.jpg",  
     },
     {
-        name: 'person 10',
-        designation: 'designation',
+        name: 'MOHAMMD JAFFAR SULAIMAN',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: '../images/profiles/tr:w-150/person.jpg',
     },
 ]
 export const socialMediaCommittee = [
     {
-        name: 'person 1',
-        designation: 'designation',
-        linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        name: 'HAFSAH TARUJ',
+        designation: 'Member',
+        linkedInURL: 'https://www.linkedin.com/mwlite/in/hafsa-taruj-5271231b0',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/hafsa_EFuQsDexX.jpeg",
     },
     {
-        name: 'person 2',
-        designation: 'designation',
+        name: 'SAWDAH HANI',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/hani.JPG",
     },
     {
-        name: 'person 3',
-        designation: 'designation',
+        name: 'MAHMOODA HAFSAH',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/hafsa.JPG",
     },
     {
-        name: 'person 4',
-        designation: 'designation',
+        name: 'SALWA ASHFAQ',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Salwa_Ashfaq.jpg",
     },
     {
-        name: 'person 5',
-        designation: 'designation',
+        name: 'SANA TAHSEEN',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/sana_X7ag4XXDL.jpg",
     },
     {
-        name: 'person 6',
-        designation: 'designation',
+        name: 'SAMEERA SULTANA',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/sameera.JPG",
     },
     {
-        name: 'person 7',
-        designation: 'designation',
+        name: 'MOHAMMED BILAL',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/bilal.JPG",   
     },
     {
-        name: 'person 8',
-        designation: 'designation',
+        name: 'SYED OBAID ULLAH',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/obaid.jpeg",
     },
     {
-        name: 'person 9',
-        designation: 'designation',
+        name: 'IBRAHIM HISAMUDDIN SIDDIQUI',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/ibrahim.JPG",
     },
     {
-        name: 'person 10',
-        designation: 'designation',
+        name: 'MOHAMMED FAHEEM',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/faheem.JPG",
+    },
+    {   
+        name: 'INAYATH',
+        designation: 'Member',
+        linkedInURL: 'linkedIn url',
+        image: '../images/profiles/tr:w-150/person.jpg',
     },
 ]
 export const membershipCommittee = [
     {
-        name: 'person 1',
-        designation: 'designation',
-        linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        name: 'SYEDA AAMNA',
+        designation: 'Member',
+        linkedInURL: 'https://www.linkedin.com/in/umaima-ejaz-6aa0771b0',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/tr:w-150/umaima.jpg",
     },
     {
-        name: 'person 2',
-        designation: 'designation',
+        name: 'ABDUR RAHMAN KHAN',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/abdul_rahman.jpg",
     },
     {
-        name: 'person 3',
-        designation: 'designation',
-        linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        name: 'TALAL SHAFEEQ',
+        designation: 'Member',
+        linkedInURL: 'https://www.linkedin.com/in/mohammed-talal-shafeeq-9398491aa/',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/talal.JPG",
     },
     {
-        name: 'person 4',
-        designation: 'designation',
+        name: 'HUDA KHAN',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Huda.JPG",
     },
     {
-        name: 'person 5',
-        designation: 'designation',
+        name: 'ZOYA FATIMA',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/zoya_DEqTVLFEn.webp",
     },
     {
-        name: 'person 6',
-        designation: 'designation',
+        name: 'ARSHIYA ZAREIN',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/arshiya.JPG",
     },
     {
-        name: 'person 7',
-        designation: 'designation',
+        name: 'MEHVISH FATIMA',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/mahvish.JPG",
     },
     {
-        name: 'person 8',
-        designation: 'designation',
+        name: 'SYED AFFAN',
+        designation: 'Member',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/affan.JPG",
+    },
+    {
+        name: 'MOHAMMED NAYEEM',
+        designation: 'Member',
+        linkedInURL: 'linkedIn url',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/nayeem.JPG",
+    },
+    {
+        name: 'KHALEEL UR RAHMAN',
+        designation: 'Member',
+        linkedInURL: 'linkedIn url',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/khallel_ur_rahman.JPG",
+    },
+    {
+        name: 'NABIHA ABDUL RAHEEM',
+        designation: 'Member',
+        linkedInURL: 'linkedIn url',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/nabiha.JPG",
+    },
+    {
+        name: 'ALTAF SHAIK',
+        designation: 'Member',
+        linkedInURL: 'linkedIn url',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/ALTAF_SHAIK_3DCUD_-OQ.jpg",
+    },
+    {
+        name: 'NABIL NAQVI',
+        designation: 'Member',
+        linkedInURL: 'linkedIn url',
+        image: '../images/profiles/tr:w-150/person.jpg',
     },
 ]
 export const wie = [
     {
-        name: 'Raghad Amr Ahmed',
-        designation: 'Chair',
+        name: 'RAGHAD AMR AHMED',
+        designation: 'CHAIR',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/raghad.jpg",
     },
     {
-        name: 'person 2',
-        designation: 'designation',
+        name: 'SYEDA KOUNAIN FATIMA',
+        designation: 'VICE CHAIR',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/kounain.JPG",
     },
     {
-        name: 'person 3',
-        designation: 'designation',
+        name: 'ZOYA FATIMA',
+        designation: 'Secretary',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/zoya_DEqTVLFEn.webp",
     },
     {
-        name: 'person 4',
-        designation: 'designation',
+        name: 'ARSHIYA ZAREIN',
+        designation: 'Treasurer',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: '../images/profiles/tr:w-150/person.jpg',
     },
     {
-        name: 'person 5',
-        designation: 'designation',
+        name: 'SAWDAH HANI',
+        designation: 'Webmaster',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/hani.JPG",
     },
     {
-        name: 'person 6',
-        designation: 'designation',
+        name: 'MAHMOODA HAFSAH',
+        designation: 'Graphic Designer',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/hafsa.JPG",
+    },
+    {  
+        name: 'SALWA ASHFAQ',
+        designation:'Member',
+        linkedInURL: 'linkedIn url',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Salwa_Ashfaq.jpg",
+    },
+    {
+        name: 'MEHVISH FATIMA',
+        designation:'Member',
+        linkedInURL: 'linkedIn url',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/hafsa_EFuQsDexX.jpeg",
+    },
+    {
+        name: 'HAFSAH TARUJ',
+        designation: 'Member',
+        linkedInURL: 'linkedIn url',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/hafsa_EFuQsDexX.jpeg",
     },
 ]
 export const ras = [
     {
-        name: 'Syed Abdul Haq',
-        designation: 'Chair',
+        name: 'SYED ABDUL HAQ',
+        designation: 'CHAIR',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/haq.JPG",
     },
     {
-        name: 'person 2',
-        designation: 'designation',
+        name: 'SYED MOHAMMED ALI',
+        designation: 'VICE CHAIR',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/ali.JPG",
     },
     {
-        name: 'person 3',
-        designation: 'designation',
+        name: 'NABIHA ABDUL RAHEEM',
+        designation: 'Secretary',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/nabiha.JPG",
     },
     {
-        name: 'person 4',
-        designation: 'designation',
+        name: 'IBRAHIM HISAMUDDIN SIDDIQUI',
+        designation: 'Web Master',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/ibrahim.JPG",
     },
     {
-        name: 'person 5',
-        designation: 'designation',
+        name: 'ALTAF SHAIK',
+        designation: 'Treasurer',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/ALTAF_SHAIK_3DCUD_-OQ.jpg",
     },
     {
-        name: 'person 6',
-        designation: 'designation',
+        name: 'SALWA ASHFAQ',
+        designation: 'Graphic Designer',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Salwa_Ashfaq.jpg",
+    },
+    {
+        name: 'SHOAIB MOHAMMED HABEEB',
+        designation: 'Member',
+        linkedInURL: 'linkedIn url',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/shoaib.jpg",
+    },
+    {
+        name: 'SYED AMEENULLAH HUSSAINI',
+        designation: 'Member',
+        linkedInURL: 'linkedIn url',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/AmeenUllah_L5j7VfIlV.webp",
+    },
+    {
+        name: 'ABDUL QUDDOS KHAN',
+        designation: 'Member',
+        linkedInURL: 'linkedIn url',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/quddous.jpg",
+    },
+    { 
+        name: 'MOHAMMED FAHEEM',
+        designation: 'Member',
+        linkedInURL: 'linkedIn url',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/faheem.JPG",
+    },
+    {
+        name: 'MOHAMMED JAFFAR SULAIMAN',
+        designation: 'Member',
+        linkedInURL: 'linkedIn url',
+        image: '../images/profiles/tr:w-150/person.jpg',
+    },
+    {
+        name: 'INAYATH',
+        designation: 'Member',
+        linkedInURL: 'linkedIn url',
+        image: '../images/profiles/tr:w-150/person.jpg',
     },
 ]
 export const cs = [
     {
-        name: 'Zain',
-        designation: 'Chair',
+        name: 'SYED MOHAMMED ZAIN',
+        designation: 'CHAIR',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/zain.JPG",
     },
     {
-        name: 'person 2',
-        designation: 'designation',
+        name: 'SAYEED AHMED KHAN',
+        designation: 'VICE CHAIR',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Sayeed.JPG",
     },
     {
-        name: 'person 3',
-        designation: 'designation',
+        name: 'SYED AFFAN',
+        designation: 'Secretary',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/affan.JPG",
     },
     {
-        name: 'person 4',
-        designation: 'designation',
+        name: 'SANA TAHSEEN',
+        designation: 'Web Master',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/sana_X7ag4XXDL.jpg",
     },
     {
-        name: 'person 5',
-        designation: 'designation',
+        name: 'SAMEERA SULTANA',
+        designation: 'Graphic Designer',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/sameera.JPG",
     },
     {
-        name: 'person 6',
-        designation: 'designation',
+        name: 'MOHAMMED NAYEEM',
+        designation: 'Treasurer',
         linkedInURL: 'linkedIn url',
-        emailURL: 'email url',
-        image: '../images/profiles/person.jpg'
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/nayeem.JPG",
+    },
+    {
+        name:'ZEESHAN KHAN',
+        designation:'Member',
+        linkedInURL:'linkedIn url',
+        image:"https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/zeeshan.JPG",
+    },
+    {
+        name:'MEHVISH FATIMA',
+        designation:'Member',
+        linkedInURL:'linkedIn url',
+        image:"https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/mahvish.JPG",
+    },
+    {
+        name:'MOHAMMED KHALEEL UR RAHMAN',
+        designation:'Member',
+        linkedInURL:'linkedIn url',
+        image:"https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/khallel_ur_rahman.JPG",
+    },
+    {
+        name:'MOHAMMED BILAL',
+        designation:'Member',
+        linkedInURL:'linkedIn url',
+        image:"https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/bilal.JPG",
+    },
+    {
+        name:'SYED OBAID ULLAH',
+        designation:'Member',
+        linkedInURL:'linkedIn url',
+        image:"https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/obaid.jpeg",
+    },
+    {
+        name:'NABEEL NAQVI',
+        designation:'Member',
+        linkedInURL:'linkedIn url',
+        image:'../images/profiles/tr:w-150/person.jpg',
     },
 ]
