@@ -24,10 +24,11 @@ function Login() {
                 email: userAuth.user.email,
                 uid: userAuth.user.uid,
             }))
+            history.replace("/");
+            alert("Successfully Logged In");
         })
         .catch((error) => alert(error))
 
-        history.replace("/");
       };
     
     
