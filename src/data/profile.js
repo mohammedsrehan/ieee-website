@@ -50,11 +50,11 @@ export const excom = [
         image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/nida.JPG",
     },
     {
-        name: 'SYEDA AAMNA',
+        name: 'SYEDA KOUNAIN FATIMA',
         designation: 'SECRETARY',
-        linkedInURL: 'https://www.linkedin.com/in/syeda-aamna-ba6369203',
-        emailURL: 'mailto:syedaaamna@ieee.org',
-        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/aamna.jpeg",
+        linkedInURL: 'linkedIn url',
+        emailURL: 'mailto:syedakounain@ieee.org',
+        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/kounain.JPG",
     },
     {
         name: 'MIRZA ANAWIN',
@@ -103,7 +103,7 @@ export const excom = [
         designation:'PUBLIC RELATIONS',
         linkedInURL:'https://www.linkedin.com/in/mirza-anawin-42a3231a8/',
         emailURL:'mailto:hudakhan@ieee.org',
-        image:"https://ik.imagekit.io/ieeensakcet/profiles/Huda.JPG",  
+        image:"https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/Huda.JPG",  
     },
 ];
 
@@ -250,12 +250,6 @@ export const socialMediaCommittee = [
     },
 ]
 export const membershipCommittee = [
-    {
-        name: 'SYEDA AAMNA',
-        designation: 'Member',
-        linkedInURL: 'https://www.linkedin.com/in/umaima-ejaz-6aa0771b0',
-        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/tr:w-150/umaima.jpg",
-    },
     {
         name: 'ABDUR RAHMAN KHAN',
         designation: 'Member',
@@ -525,32 +519,5 @@ export const cs = [
         designation:'Member',
         linkedInURL:'linkedIn url',
         image:"https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/obaid.jpeg",
-    },
-    {
-        name:'NABEEL NAQVI',
-        designation:'Member',
-        linkedInURL:'linkedIn url',
-        image:'../images/profiles/tr:w-150/person.jpg',
-    },
-    {
-        name:'MOHAMMED BILAL',
-        designation:'Member',
-        linkedInURL:'linkedIn url',
-        emailURL:'mailto:Mohammed.bilal@ieee.org',
-        image:"https://ik.imagekit.io/ieeensakcet/profiles/bilal.JPG",
-    },
-    {
-        name:'SYED OBAID ULLAH',
-        designation:'Member',
-        linkedInURL:'linkedIn url',
-        emailURL:'email url',
-        image:"https://ik.imagekit.io/ieeensakcet/profiles/obaid.jpeg",
-    },
-    {
-        name:'NABEEL NAQVI',
-        designation:'Member',
-        linkedInURL:'linkedIn url',
-        emailURL:'email url',
-        image:'../images/profiles/person.jpg',
     },
 ]
