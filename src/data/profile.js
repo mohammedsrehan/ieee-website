@@ -251,12 +251,6 @@ export const socialMediaCommittee = [
 ]
 export const membershipCommittee = [
     {
-        name: 'SYEDA AAMNA',
-        designation: 'Member',
-        linkedInURL: 'https://www.linkedin.com/in/umaima-ejaz-6aa0771b0',
-        image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/umaima.jpg",
-    },
-    {
         name: 'ABDUR RAHMAN KHAN',
         designation: 'Member',
         linkedInURL: 'linkedIn url',
@@ -525,11 +519,5 @@ export const cs = [
         designation:'Member',
         linkedInURL:'linkedIn url',
         image:"https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/obaid.jpeg",
-    },
-    {
-        name:'NABEEL NAQVI',
-        designation:'Member',
-        linkedInURL:'linkedIn url',
-        image:'../images/profiles/tr:w-150/person.jpg',
     },
 ]
